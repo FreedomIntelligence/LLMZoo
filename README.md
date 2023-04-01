@@ -19,13 +19,15 @@ Sorry, the short answer is
 
 The long answer will be shown below. Here are the modifications:
 
+
+### User-ChatGPT conversations
+- User generated ChatGPT conversations.
+
 ### Instruction
 - **User**-centered  instruction (**Modular** instruction construction)
 - **Chat**-based instructions (user, instruction, conversations)
 - Multilingual instructions (post-translation and language-specific instructions)
 
-### User-ChatGPT conversations
-- User generated ChatGPT conversations.
 
 
 ## Model and Dataset
