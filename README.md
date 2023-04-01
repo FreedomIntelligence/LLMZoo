@@ -12,7 +12,10 @@ The biggest barrier of LLM is that we do not have enough candidate names for LLM
 - Make AI open again
 
 
-## Some modification
+## What is new in Chimera
+
+Sorry, the short answer is
+> Nothing new but a hybrid like Chimera
 
 ### Instruction
 - **User**-centered  instruction (**Modular** instruction construction)
