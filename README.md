@@ -31,8 +31,8 @@ The long answer will be shown below. Here are the modifications:
 ## Model and Dataset
 
 ### Model
-- LLama-7B 
-- LLama-13B
+- LLama-7B  see HuggieFace
+- LLama-13B see HuggieFace
 
 ### Dataset
 #### User-ChatGPT conversations
