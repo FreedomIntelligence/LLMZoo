@@ -26,7 +26,7 @@ The long answer will be shown below. Here are the modifications:
 ### Instruction
 - **User**-centered  instruction (**Modular** instruction construction)
 - **Chat**-based instructions (user, instruction, conversations)
-- Multilingual instructions (post-translation and language-specific instructions)
+- Multilingual instructions (language-specific instructions and post-translation)
 
 
 
