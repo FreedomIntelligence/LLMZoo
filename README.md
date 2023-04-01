@@ -43,8 +43,15 @@ The long answer will be shown below. Here are the modifications:
 - Basic instruction 
 - Chat instruction
 
+## Online Demo
+https://123.57.133.182/ 
 
 ## Benchmark
+
+## Deployment
+### Install
+### Serving
+### Web UI
 
 
 ## Limitations
