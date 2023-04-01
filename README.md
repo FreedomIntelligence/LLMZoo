@@ -28,5 +28,29 @@ The long answer will be shown below. Here are the modifications:
 - User generated ChatGPT conversations.
 
 
+## Model and Dataset
+
+### Model
+- LLama-7B 
+- LLama-13B
+
+### Dataset
+#### User-ChatGPT conversations
+- Discord
+- ShareGPT
+
+#### Instruction
+- Basic instruction 
+- Chat instruction
+
+
 ## Benchmark
+
+
+## Limitations
+
+
+## Contributions
+
+> Zhihong Chen et al. Chimera, democratizing ChatGPT across languages. ArXiv 2023.4
 
