@@ -30,6 +30,7 @@ The long answer will be shown below. Here are the modifications:
 
 ## Model and Dataset
 
+
 ### Model
 - LLama-7B  see HuggieFace
 - LLama-13B see HuggieFace
@@ -45,6 +46,10 @@ The long answer will be shown below. Here are the modifications:
 
 ## Online Demo
 https://123.57.133.182/ 
+
+## methodology
+
+See our technical report
 
 ## Benchmark
 
