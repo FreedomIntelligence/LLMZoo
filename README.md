@@ -9,6 +9,7 @@ The biggest barrier of LLM is that we do not have enough candidate names for LLM
 - Break  "AI supremacy"  and democratize ChatGPT
 > "AI supremacy" is understood as a company's absolute leadership and monopoly position in an AI field, which may even include exclusive capabilities beyond general artificial intelligence. This is unacceptable for society and may even lead to individual influence on the direction of human future, thus bringing various hazards to society.
 - Make ChatGPT-like LLM accessiable across countries and languages
+- Make AI open again
 
 
 ## Some modification
