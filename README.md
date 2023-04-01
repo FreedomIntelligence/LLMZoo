@@ -2,7 +2,7 @@
 
 
 ## Some modification
-- **User**-centriced instruction
+- **User**-centered  instruction
 - **Chat**-based instructions
 - **Modular** instruction construction
 - Multilingual instructions
