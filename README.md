@@ -15,7 +15,9 @@ The biggest barrier of LLM is that we do not have enough candidate names for LLM
 ## What is new in Chimera
 
 Sorry, the short answer is
-> Nothing new but a hybrid like Chimera
+> nothing new but a hybrid like Chimera
+
+The long answer will be shown below. Here are the modifications:
 
 ### Instruction
 - **User**-centered  instruction (**Modular** instruction construction)
