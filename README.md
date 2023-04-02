@@ -39,7 +39,7 @@ The long answer will be shown below. Here are the modifications:
 
 ### Dataset
 #### User-ChatGPT conversations
-- Discord
+- Collected ChatGPT conversations
 - ShareGPT
 
 #### Instruction
