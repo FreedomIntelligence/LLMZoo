@@ -2,7 +2,7 @@
 
 ## The phylosphy to name Chimera
 
-The biggest barrier of LLM is that we do not have enough candidate names for LLM,  as LLAMA，Guanaco, Vicuna, and Alpaca were already used. Therefore, we find a similiar hybrid creature in Greek mythology  https://en.wikipedia.org/wiki/Chimera_(mythology) , composed of different animal parts from Lycia and Asia Minor. This is coincidentally to memorize a peroid to play DOTA (and also Warcraft III) during high school and undergraduate time. Interestingly,  we also give a nick name for Chimera, 华驼 (litterally as a Chinese LLaMA) -- I'll give you a riddle, and you'll know why it's called that after a while.
+The biggest barrier of LLM is that we do not have enough candidate names for LLM,  as LLAMA，Guanaco, Vicuna, and Alpaca were already used and there are no more members in the camel family.  Therefore, we find a similiar hybrid creature in Greek mythology  https://en.wikipedia.org/wiki/Chimera_(mythology) , composed of different animal parts from Lycia and Asia Minor. Coincidentally, it is a hero/role in  DOTA (and also Warcraft III), it could therefore be used to memorize a peroid to play games over night during high school and undergraduate time. Interestingly,  we also give a nick name for Chimera, 华驼 (litterally as a Chinese LLaMA) -- I'll give you a riddle, and you'll know why it's called that after a while.
 
 ## Motivation 
 
