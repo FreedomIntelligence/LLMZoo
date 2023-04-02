@@ -1,4 +1,4 @@
-# Chimera, democratizing ChatGPT across languages
+# Chimera, democratizing ChatGPT across languages ![avatar](assets/chimera.png)
 
 ## Table of Contents
 - [The philosophy to name Chimera](The-philosophy-to-name-Chimera)
