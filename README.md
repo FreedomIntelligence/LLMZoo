@@ -1,14 +1,14 @@
 # Chimera ![avatar](assets/chimera.png), democratizing ChatGPT across languages
 
 ## Table of Contents
-- [The philosophy to name Chimera](The-philosophy-to-name-Chimera)
-- [Motivation](Motivation)
-- [What is new in Chimera](What-is-new-in-Chimera)
-- [Model and Dataset](Model-and-Dataset)
-- [Online Demo](Online-Demo)
-- [Methodology](Methodology)
-- [Benchmark](Benchmark)
-- [Limitations](Limitations)
+- [The philosophy to name Chimera](#the-philosophy-to-name-chimera)
+- [Motivation](#motivation)
+- [What is new in Chimera](#what-is-new-in-chimera)
+- [Model and Dataset](#model-and-dataset)
+- [Online Demo](#online-demo)
+- [Methodology](#methodology)
+- [Benchmark](#benchmark)
+- [Limitations](#limitations)
 
 ## The philosophy to name Chimera
 
