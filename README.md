@@ -76,4 +76,11 @@ See our technical report.
 Chimera is contributed by the following authors: Zhihong Chen, Junying Chen, Hongbo Zhang, Tiannan Wang, Fei Yu, Guiming Chen, Zhengyang Tang, Ridong Han, and Benyou Wang (Advisor).
 
 ## Citation
-> Zhihong Chen et al. Chimera, democratizing ChatGPT across languages. ArXiv 2023.4
+```angular2
+@article{chimera-2023,
+  title={Chimera: democratizing ChatGPT across languages},
+  author={},
+  journal={arXiv preprint arXiv:xxxx.xxxxxx},
+  year={2023}
+}
+```
