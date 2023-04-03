@@ -144,9 +144,19 @@ conv_bair_v1 = Conversation(
     sep2="</s>",
 )
 
-default_conversation = conv_v1_2
+conv = Conversation(
+    system="A chat between a curious human and an artificial intelligence assistant. "
+           "The assistant gives helpful, detailed, and polite answers to the human's questions.",
+    roles=("Human", "Assistant"),
+    messages=(),
+    offset=0,
+    sep_style=SeparatorStyle.SINGLE,
+    sep="###",
+)
+
+default_conversation = conv
 conv_templates = {
-    "v1": conv_v1_2,
+    "v1": conv,
     "bair_v1": conv_bair_v1,
 }
 

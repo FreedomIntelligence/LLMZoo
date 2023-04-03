@@ -115,7 +115,7 @@ def _mask_targets(target, tokenized_lens, speakers):
 def _add_speaker_and_signal(header, source, get_conversation=True):
     """Add speaker and start/end signal on each round."""
     BEGIN_SIGNAL = "### "
-    END_SIGNAL = "\n"
+    END_SIGNAL = "### "
     conversation = header
     intermediate = []
     for sentence in source:
@@ -184,6 +184,7 @@ class SupervisedDataset(Dataset):
         super(SupervisedDataset, self).__init__()
         logging.warning("Loading data...")
         list_data_dict = json.load(open(data_path, "r"))
+        list_data_dict = [item for item in list_data_dict if len(item["conversations"]) > 0]
 
         logging.warning("Formatting inputs...")
         sources = [example["conversations"] for example in list_data_dict]
@@ -207,6 +208,7 @@ class LazySupervisedDataset(Dataset):
         super(LazySupervisedDataset, self).__init__()
         logging.warning("Loading data...")
         list_data_dict = json.load(open(data_path, "r"))
+        list_data_dict = [item for item in list_data_dict if len(item["conversations"]) > 0]
 
         logging.warning("Formatting inputs...Skip in lazy mode")
         self.tokenizer = tokenizer
