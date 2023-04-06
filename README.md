@@ -32,12 +32,11 @@ The long answer will be shown below. Here are the modifications:
 ### User-ChatGPT conversations
 - User-generated ChatGPT conversations.
 
-### Instruction
-- **User**-centered  instruction (**Modular** instruction construction)
-- **Chat**-based instructions (user, instruction, conversations)
-- Multilingual instructions (language-specific instructions and post-translation -- the latter makes instruction language-agostic)
-
-
+### Multilingual Instruction
+- Multilingual instructions (language-agostic instructions with post-translation)
+- Language-specific instructions 
+- **User**-centered  instruction (**Modular** instruction construction) coming soon
+- **Chat**-based instructions (user, instruction, conversations) coming soon
 
 ## Model and Dataset
 
