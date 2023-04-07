@@ -60,3 +60,5 @@ As an open source project, we are open to contributions. Feel free to contribute
   howpublished = {\url{https://github.com/FreedomIntelligence/LLMZoo}},
 }
 ```
+
+We are from the School of Data Science, the Chinese University of Hong Kong, Shenzhen (CUHKSZ) and the Shenzhen Rsearch Institute of Big Data (SRIBD).
