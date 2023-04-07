@@ -35,9 +35,9 @@ Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could ther
 
 ### Web UI
 
-## Limitations
+## 🤖 Limitations
 
-## Contributors
+## 🙌 Contributors
 LLM Zoo are mainly contributed by:
 - Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Tiannan Wang](), [Fei Yu](), [Guiming Chen]()
