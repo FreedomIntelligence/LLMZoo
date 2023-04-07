@@ -57,6 +57,6 @@ As an open source project, we are open to contributions. Feel free to contribute
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/FreedomIntelligence/chimera}},
+  howpublished = {\url{https://github.com/FreedomIntelligence/LLMZoo}},
 }
 ```
