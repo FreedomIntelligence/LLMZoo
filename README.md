@@ -39,7 +39,7 @@ LLM across Languages.
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
-Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC.  Training is already finished; we will release it in two weeks; some efforts are needed to delopy in public cloud servers in case of massive requests.
+Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC.  Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in public cloud servers in case of massive requests.
 
 ### Vision-langugae LLaMA (coming soon)
 ### Retrieval-augmented LLaMA (coming soon)
@@ -68,6 +68,7 @@ As an open source project, we are open to contributions. Feel free to contribute
 
 We are aware that our works are inspired by the following works, include but are not limited to 
 - LLaMA: https://github.com/facebookresearch/llama
+- Bloom: https://huggingface.co/bigscience/bloom
 - Self-instruct: https://github.com/yizhongw/self-instruct
 - Alpaca: https://github.com/tatsu-lab/stanford_alpaca
 - Vicuna: https://github.com/lm-sys/FastChat
