@@ -15,14 +15,16 @@
 - Language-specific instructions
 - **User**-centered instruction (**Modular** instruction construction)
 - **Chat**-based instructions (user, instruction, conversations)
+> check our intruction dataset in https://github.com/FreedomIntelligence/InstructionZoo
 ### Conversation data
 - User-generated ChatGPT conversations
+> check open User-chatGPT conversation data in  https://github.com/FreedomIntelligence/OpenChatGPT
 
 ## 🐼 Models
 > The philosophy to name models: The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA, Guanaco, Vicuna, and Alpaca were already used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts.
 Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period to play games overnight during high school and undergraduate time. Interestingly,  we also give a nickname for Chimera, 华驼 (literally as a Chinese LLaMA) -- I'll give you a riddle, and you'll know why it's called that after a while.
 
-### Chimera: LLM on English
+### Chimera: LLM  mainly for Latin and Cyrillic languages.
 
 ### Phoenix: LLM across Languages
 
@@ -41,16 +43,20 @@ Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could ther
 LLM Zoo are mainly contributed by:
 - Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Tiannan Wang](), [Fei Yu](), [Guiming Chen]()
+- Others: Zhiyi Zhang, Jianquan Li, and Xiang Wan
 
 As an open source project, we are open to contributions. Feel free to contribute if you have any idea or find any issue.
 
 
 ## Citation
 ```angular2
-@article{llm-zoo-2023,
+@misc{llm-zoo-2023,
   title={LLM Zoo: democratizing ChatGPT},
+  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Tiannan Wang and Fei Yu and Zhiyi Zhang and Jianquan Li and and Xiang Wan and Benyou Wang},
   author={},
-  journal={arXiv preprint arXiv:xxxx.xxxxxx},
-  year={2023}
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/FreedomIntelligence/chimera}},
 }
 ```
