@@ -25,7 +25,9 @@ The philosophy to name models:
 > The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA, Guanaco, Vicuna, and Alpaca were already used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts.
 Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period to play games overnight during high school and undergraduate time.
 
-> The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of bird languages.  
+> The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird) languages.  
+
+> More importantly, **Phoenix** is the symbol of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); It goes without saying this is also for the Chinese University of Hong Kong (CUHK).
 
 ### Chimera: 
 
@@ -33,7 +35,15 @@ LLM  mainly for Latin and Cyrillic languages.
 
 ### Phoenix: 
 
-LLM across Languages
+LLM across Languages.
+
+### CAMEL (Chinese And Medically Enhanced Langauge models)
+
+Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC.  Training is already finished; we will release it in two weeks; some efforts are needed to delopy in public cloud servers in case of massive requests.
+
+### Vision-langugae LLaMA (coming soon)
+### Retrieval-augmented LLaMA (coming soon)
+
 
 ## 🧐 Evaluation
 
@@ -52,11 +62,11 @@ LLM Zoo are mainly contributed by:
 - Evaluation: [Tiannan Wang](), [Fei Yu](), [Guiming Chen]()
 - Others: Zhiyi Zhang, Jianquan Li, and Xiang Wan
 
-As an open source project, we are open to contributions. Feel free to contribute if you have any idea or find any issue.
+As an open source project, we are open to contributions. Feel free to contribute if you have any ideas or find any issue.
 
 ## Acknowledgement
 
-We are aware that our works are inspired by the following work, includes but is not limited to 
+We are aware that our works are inspired by the following works, include but are not limited to 
 - LLaMA: https://github.com/facebookresearch/llama
 - Self-instruct: https://github.com/yizhongw/self-instruct
 - Alpaca: https://github.com/tatsu-lab/stanford_alpaca
