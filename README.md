@@ -21,12 +21,19 @@
 > check open User-chatGPT conversation data in  https://github.com/FreedomIntelligence/OpenChatGPT
 
 ## 🐼 Models
-> The philosophy to name models: The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA, Guanaco, Vicuna, and Alpaca were already used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts.
-Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period to play games overnight during high school and undergraduate time. Interestingly,  we also give a nickname for Chimera, 华驼 (literally as a Chinese LLaMA) -- I'll give you a riddle, and you'll know why it's called that after a while.
+The philosophy to name models: 
+> The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA, Guanaco, Vicuna, and Alpaca were already used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts.
+Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period to play games overnight during high school and undergraduate time.
 
-### Chimera: LLM  mainly for Latin and Cyrillic languages.
+> The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of bird languages.  
 
-### Phoenix: LLM across Languages
+### Chimera: 
+
+LLM  mainly for Latin and Cyrillic languages.
+
+### Phoenix: 
+
+LLM across Languages
 
 ## 🧐 Evaluation
 
@@ -47,6 +54,15 @@ LLM Zoo are mainly contributed by:
 
 As an open source project, we are open to contributions. Feel free to contribute if you have any idea or find any issue.
 
+## Acknowledgement
+
+We are aware that our works are inspired by the following work, includes but is not limited to 
+- LLaMA: https://github.com/facebookresearch/llama
+- Self-instruct: https://github.com/yizhongw/self-instruct
+- Alpaca: https://github.com/tatsu-lab/stanford_alpaca
+- Vicuna: https://github.com/lm-sys/FastChat
+
+Without these nothing could happen in this repository
 
 ## Citation
 ```angular2
