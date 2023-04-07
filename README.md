@@ -30,16 +30,16 @@ Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could ther
 
 ## 🏭 Deployment
 ### Install
-### Serving
-### Web UI
 
+### Serving
+
+### Web UI
 
 ## Limitations
 
-
 ## Contributors
 LLM Zoo are mainly contributed by:
-- Data and Model: [Zhihong Chen](), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Benyou Wang]() (Advisor)
+- Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Tiannan Wang](), [Fei Yu](), [Guiming Chen]()
 
 As an open source project, we are open to contributions. Feel free to contribute if you have any idea or find any issue.
