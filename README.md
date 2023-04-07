@@ -15,7 +15,7 @@
 - Language-specific instructions
 - **User**-centered instruction (**Modular** instruction construction)
 - **Chat**-based instructions (user, instruction, conversations)
-> check our intruction dataset in https://github.com/FreedomIntelligence/InstructionZoo
+> check open intruction dataset in https://github.com/FreedomIntelligence/InstructionZoo
 ### Conversation data
 - User-generated ChatGPT conversations
 > check open User-chatGPT conversation data in  https://github.com/FreedomIntelligence/OpenChatGPT
