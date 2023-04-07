@@ -2,14 +2,14 @@
 
 ⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡
 
-## Motivation 
+## 🤔 Motivation 
 
 - Break  "AI supremacy"  and democratize ChatGPT
 > "AI supremacy" is understood as a company's absolute leadership and monopoly position in an AI field, which may even include exclusive capabilities beyond general artificial intelligence. This is unacceptable for society and may even lead to individual influence on the direction of the human future, thus bringing various hazards to society.
 - Make ChatGPT-like LLM accessible across countries and languages
 - Make AI open again. Every person, regardless of their skin color or place of birth, should have equal access to the technology gifted by the creator. For example, many pioneers have made great efforts to spread the use of light bulbs and vaccines to developing countries. Similarly, ChatGPT, one of the greatest technological advancements in modern history, should also be made available to all.
 
-## Data
+## 📚 Data
 ### Instruction data
 - Multilingual instructions (language-agostic instructions with post-translation)
 - Language-specific instructions
@@ -18,7 +18,7 @@
 ### Conversation data
 - User-generated ChatGPT conversations
 
-## Models
+## 🐼 Models
 > The philosophy to name models: The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA, Guanaco, Vicuna, and Alpaca were already used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts.
 Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period to play games overnight during high school and undergraduate time. Interestingly,  we also give a nickname for Chimera, 华驼 (literally as a Chinese LLaMA) -- I'll give you a riddle, and you'll know why it's called that after a while.
 
@@ -26,9 +26,9 @@ Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could ther
 
 ### Phoenix: LLM across Languages
 
-## Evaluation
+## 🧐 Evaluation
 
-## Deployment
+## 🏭 Deployment
 ### Install
 ### Serving
 ### Web UI
