@@ -49,12 +49,21 @@
 > Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of
 > playing games overnight during high school and undergraduate time.
 
+| Model            | Backbone  | Data         | Link            |
+|------------------|-----------|--------------|-----------------|
+| chimera-chat-7b  | LLaMA-7b  | Conversation | [huggingface]() |
+| chimera-chat-13b | LLaMA-13b | Conversation | [huggingface]() |
+
 ### Phoenix (LLM across Languages)
 
 > The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king
 of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak
 > different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird)
 > languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it goes without saying this is also for the Chinese University of Hong Kong (CUHK).
+
+| Model           | Backbone      | Data         | Link            |
+|-----------------|---------------|--------------|-----------------|
+| phoenix-chat-7b | BLOOMZ-7b1-mt | Conversation | [huggingface]() |
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
