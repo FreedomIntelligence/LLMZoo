@@ -87,7 +87,7 @@
 
 ```bash
 python3 apply_delta.py --base /path/to/llama-7b --target /output/path/to/chimera-chat-7b 
---delta  FreedomIntelligence/chimera-chat-7b-delta
+--delta FreedomIntelligence/chimera-chat-7b-delta
 ```
 
 ### Phoenix (LLM across Languages)
