@@ -11,7 +11,8 @@
 - Break  "AI supremacy"  and democratize ChatGPT
 
 > "AI supremacy" is understood as a company's absolute leadership and monopoly position in an AI field, which may even
-> include exclusive capabilities beyond general artificial intelligence. This is unacceptable for AI community and may even
+> include exclusive capabilities beyond general artificial intelligence. This is unacceptable for AI community and may
+> even
 > lead to individual influence on the direction of the human future, thus bringing various hazards to human society.
 
 - Make ChatGPT-like LLM accessible across countries and languages
@@ -25,6 +26,7 @@
 ### Instruction data
 
 - Multilingual instructions (language-agostic instructions with post-translation)
+
 ```diff
 + (Instruction, Input, Output) in Language A
 - ---(Step 1) Translation--->
@@ -32,6 +34,7 @@
 ```
 
 - Language-specific instructions
+
 ```diff
 + Self-Instructed / Translated (Instruction, Input) in Language A
 - ---(Step 1) Translation--->
@@ -41,6 +44,7 @@
 ```
 
 - **User**-centered instruction (**Modular** instruction construction)
+
 ```diff
 + (Role, Instruction, Input) seeds
 - ---(Step 1) Self Instruct--->
@@ -48,6 +52,7 @@
 ```
 
 - **Chat**-based instructions (user, instruction, conversations)
+
 ```diff
 + (Instruction, Input) seeds
 - ---(Step 1) Multi-bot Chat--->
@@ -57,7 +62,9 @@
 > Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
 
 ### Conversation data
+
 - User-generated ChatGPT conversations
+
 ```diff
 + ChatGPT coversations shared on Internet
 - ---(Step 1) Crawl--->
@@ -80,14 +87,16 @@
 
 | Model            | Backbone  | Data         | Link                                                                       |
 |------------------|-----------|--------------|----------------------------------------------------------------------------|
-| chimera-chat-7b  | LLaMA-7b  | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-7b)  |
-| chimera-chat-13b | LLaMA-13b | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-13b) |
+| chimera-chat-7b  | LLaMA-7b  | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-7b-delta)  |
+| chimera-chat-13b | LLaMA-13b | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-13b-delta) |
 
-- Due to LLaMA's license restrictions, we release our delta weights following [FastChat](https://github.com/lm-sys/FastChat). To use Chimera, obtain the original [LLaMA weights](https://huggingface.co/docs/transformers/main/model_doc/llama) and run the script:
+Due to LLaMA's license restrictions, we follow [FastChat](https://github.com/lm-sys/FastChat) to release our delta weights. To use Chimera, download the original [LLaMA weights](https://huggingface.co/docs/transformers/main/model_doc/llama) and run the script:
 
 ```bash
-python apply_delta.py --base /path/to/llama-7b --target /output/path/to/chimera-chat-7b 
---delta FreedomIntelligence/chimera-chat-7b-delta
+python tools/apply_delta.py \
+ --base /path/to/llama-7b \
+ --target /output/path/to/chimera-chat-7b \
+ --delta FreedomIntelligence/chimera-chat-7b-delta
 ```
 
 ### Phoenix (LLM across Languages)
@@ -95,7 +104,8 @@ python apply_delta.py --base /path/to/llama-7b --target /output/path/to/chimera-
 > The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king
 of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak
 > different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird)
-> languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it goes without saying this is also for the Chinese University of Hong Kong (CUHK).
+> languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it
+> goes without saying this is also for the Chinese University of Hong Kong (CUHK).
 
 | Model           | Backbone      | Data         | Link                                                                      |
 |-----------------|---------------|--------------|---------------------------------------------------------------------------|
@@ -163,7 +173,8 @@ those of ChatGPT/GPT4, which include:
 
 LLM Zoo are mainly contributed by:
 
-- Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Chen Zhang](https://genezc.github.io/), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
+- Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang]()
+  , [Chen Zhang](https://genezc.github.io/), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Fei Yu](), [Tiannan Wang](), [Guiming Chen]()
 - Others: Zhiyi Zhang, Jianquan Li and Xiang Wan
 
