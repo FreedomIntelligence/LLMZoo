@@ -25,15 +25,44 @@
 ### Instruction data
 
 - Multilingual instructions (language-agostic instructions with post-translation)
+```diff
++ (Instruction, Input, Output) in Language A
+- ---(Step 1) Translation--->
++ (Instruction, Input, Output) in Language B
+```
+
 - Language-specific instructions
+```diff
++ Self-Instructed / Translated (Instruction, Input) in Language A
+- ---(Step 1) Translation--->
++ Self-Instructed / Translated (Instruction, Input) in Language B
+- ---(Step 2) Generate--->
++ Output in Language B
+```
+
 - **User**-centered instruction (**Modular** instruction construction)
+```diff
++ Seed (Role, Instruction, Input)
+- ---(Step 1) Self Instruct--->
++ (Role, Instruction, Input, Output) samples
+```
+
 - **Chat**-based instructions (user, instruction, conversations)
+```diff
++ (Role, Instruction, Input) seeds
+- ---(Step 1) Self Instruct--->
++ (Role, Instruction, Input, Output) data
+```
 
 > Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
 
 ### Conversation data
-
 - User-generated ChatGPT conversations
+```diff
++ ChatGPT coversations shared on websites
+- ---(Step 1) Crawl--->
++ Multi-round conversation data
+```
 
 > Check open User-chatGPT conversation data in [OpenChatGPT](https://github.com/FreedomIntelligence/OpenChatGPT).
 
