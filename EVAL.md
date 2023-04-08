@@ -55,7 +55,6 @@ We store prompts in `prompts/prompts_all.json`. The prompts within are carefully
 For example:
 
 ```json
-@yufei
 {
     "relevance":{
 		"role": "Assistant",
