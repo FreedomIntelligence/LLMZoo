@@ -142,7 +142,7 @@ Without these nothing could happen in this repository
 ```angular2
 @misc{llm-zoo-2023,
   title={LLM Zoo: democratizing ChatGPT},
-  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Chen Zhang and Tiannan Wang and Fei Yu and Chen Zhang and Zhiyi Zhang and Jianquan Li and and Xiang Wan and Haizhou Li and Benyou Wang},
+  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and  Tiannan Wang and Fei Yu and Chen Zhang and Zhiyi Zhang and Jianquan Li and and Xiang Wan and Haizhou Li and Benyou Wang},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
