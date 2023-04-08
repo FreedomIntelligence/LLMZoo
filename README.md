@@ -59,7 +59,7 @@
 ### Conversation data
 - User-generated ChatGPT conversations
 ```diff
-+ ChatGPT coversations shared on websites
++ ChatGPT coversations shared on Internet
 - ---(Step 1) Crawl--->
 + Multi-round conversation data
 ```
