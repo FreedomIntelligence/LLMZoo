@@ -59,15 +59,15 @@ Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese phys
 
 Our goal in releasing our models is to assist our community in better replicating ChatGPT/GPT4. We are not targeting competition with other competitors, as benchmarking models is a challenging task. Our models face similar models to those of ChatGPT/GPT4, which include:
 
-- Lack of common sense: ChatGPT may not always have the ability to apply common sense knowledge to situations, which can lead to nonsensical or inappropriate responses.
+- Lack of common sense: our models may not always have the ability to apply common sense knowledge to situations, which can lead to nonsensical or inappropriate responses.
 
-- Limited knowledge domain: ChatGPT's knowledge is based on the data it was trained on, and it may not have the ability to provide accurate or relevant responses outside of that domain.
+- Limited knowledge domain: our models' knowledge is based on the data it was trained on, and it may not have the ability to provide accurate or relevant responses outside of that domain.
 
-- Biases: ChatGPT may have biases that reflect the biases in the data it was trained on, which can result in unintended consequences or unfair treatment.
+- Biases: our models may have biases that reflect the biases in the data it was trained on, which can result in unintended consequences or unfair treatment.
 
-- Inability to understand emotions: While ChatGPT can understand language, it may not always be able to understand the emotional tone behind it, which can lead to inappropriate or insensitive responses.
+- Inability to understand emotions: While our models can understand language, it may not always be able to understand the emotional tone behind it, which can lead to inappropriate or insensitive responses.
 
-- Misunderstandings due to context: ChatGPT may misunderstand the context of a conversation, leading to misinterpretation and incorrect responses.
+- Misunderstandings due to context: our models may misunderstand the context of a conversation, leading to misinterpretation and incorrect responses.
 
 
 ## 🙌 Contributors
