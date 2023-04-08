@@ -80,8 +80,8 @@
 
 | Model            | Backbone  | Data         | Link                                                                       |
 |------------------|-----------|--------------|----------------------------------------------------------------------------|
-| chimera-chat-7b  | LLaMA-7b  | Conversation | [huggingface](https://huggingface.co/FreedomIntelligence/chimera-chat-7b)  |
-| chimera-chat-13b | LLaMA-13b | Conversation | [huggingface](https://huggingface.co/FreedomIntelligence/chimera-chat-13b) |
+| chimera-chat-7b  | LLaMA-7b  | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-7b)  |
+| chimera-chat-13b | LLaMA-13b | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-13b) |
 
 ### Phoenix (LLM across Languages)
 
@@ -92,7 +92,7 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 
 | Model           | Backbone      | Data         | Link                                                                      |
 |-----------------|---------------|--------------|---------------------------------------------------------------------------|
-| phoenix-chat-7b | BLOOMZ-7b1-mt | Conversation | [huggingface](https://huggingface.co/FreedomIntelligence/phoenix-chat-7b) |
+| phoenix-chat-7b | BLOOMZ-7b1-mt | Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-chat-7b) |
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
