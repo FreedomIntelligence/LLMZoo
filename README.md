@@ -35,38 +35,33 @@
 
 ## 🐼 Models
 
-The philosophy to name models:
-> The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA, Guanaco, Vicuna, and
+### Chimera (LLM mainly for Latin and Cyrillic languages)
+
+> The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA,
+> Guanaco, Vicuna, and
 > Alpaca were already used, and there are no more members in the camel family. Therefore, we find a similar hybrid
 > creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia
 > and Asia Minor animal parts.
 > Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period to
 > play games overnight during high school and undergraduate time.
 
+### Phoenix (LLM across Languages)
+
 > The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king
 of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak
-> different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird) languages.
-
-> More importantly, **Phoenix** is the symbol of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); It goes
-> without saying this is also for the Chinese University of Hong Kong (CUHK).
-
-### Chimera:
-
-LLM mainly for Latin and Cyrillic languages.
-
-### Phoenix:
-
-LLM across Languages.
+> different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird)
+> languages.
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
-Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived
-around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in
-public cloud servers in case of massive requests.
+> The philosophy to name: Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua
+> Tuo (华佗), who lived
+> around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in
+> public cloud servers in case of massive requests.
 
-### Vision-langugae LLaMA (coming soon)
+### Vision-Language Models (coming soon)
 
-### Retrieval-augmented LLaMA (coming soon)
+### Retrieval-augmented Models (coming soon)
 
 ## 🧐 Evaluation
 
