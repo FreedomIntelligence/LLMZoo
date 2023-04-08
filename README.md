@@ -49,13 +49,17 @@ Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese phys
 
 ## 🏭 Deployment
 ### Install
+Run the following command to install the required packages:
+```angular2html
+pip install -r requirements.txt
+```
 
-### Serving
-
-### Web UI
+### CLI Inference
+```angular2html
+python -m llmzoo.deploy.cli --model-name /path/to/weights/
+```
 
 ## 🤖 Limitations
-
 
 Our goal in releasing our models is to assist our community in better replicating ChatGPT/GPT4. We are not targeting competition with other competitors, as benchmarking models is a challenging task. Our models face similar models to those of ChatGPT/GPT4, which include:
 

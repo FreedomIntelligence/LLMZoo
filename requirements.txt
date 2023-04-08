@@ -1,0 +1,12 @@
+numpy
+torch
+git+https://github.com/huggingface/tokenizers.git
+git+https://github.com/huggingface/transformers.git
+accelerate
+sentencepiece
+gradio
+fastapi
+uvicorn
+wandb
+markdown2[all]
+requests
