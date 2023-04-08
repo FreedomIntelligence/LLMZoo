@@ -120,7 +120,7 @@ LLM Zoo are mainly contributed by:
 
 - Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Chen Zhang](), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Tiannan Wang](), [Fei Yu](), [Guiming Chen]()
-- Others: Zhiyi Zhang, Jianquan Li and Xiang Wan
+- Others: Chen Zhang, Zhiyi Zhang, Jianquan Li and Xiang Wan
 
 As an open source project, we are open to contributions. Feel free to contribute if you have any ideas or find any
 issue.
@@ -142,7 +142,7 @@ Without these nothing could happen in this repository
 ```angular2
 @misc{llm-zoo-2023,
   title={LLM Zoo: democratizing ChatGPT},
-  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Tiannan Wang and Fei Yu and Chen Zhang and Zhiyi Zhang and Jianquan Li and and Xiang Wan and Haizhou Li and Benyou Wang},
+  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Chen Zhang and Tiannan Wang and Fei Yu and Chen Zhang and Zhiyi Zhang and Jianquan Li and and Xiang Wan and Haizhou Li and Benyou Wang},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
