@@ -2,6 +2,10 @@
 
 ⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡
 
+<div align=center>
+<img src="assets/zoo.png" width = "640" alt="zoo" align=center />
+</div>
+
 ## 🤔 Motivation
 
 - Break  "AI supremacy"  and democratize ChatGPT
