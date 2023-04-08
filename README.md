@@ -124,10 +124,11 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 
 ### Retrieval-augmented Models (coming soon)
 
-## 🧐 Evaluation
+## 🧐 Evaluation and Benchmark
 
-### Overview
-We rank the models‘ performance according to different aspects.
+We rank the models' performance according to different aspects.
+
+See [here](EVAL.md) for the detailed information regarding the evaluation metrics and criterias.
 
 | En | General | Coherence | Diversity  | Relevance |
 | --- | --- | --- | --- | --- |
@@ -142,12 +143,6 @@ We rank the models‘ performance according to different aspects.
 | Chimera-chat-7b | 5.07  | 4.75  | 4.51 |  4.36 |
 | Chimera-chat-13b | 4.25  | 3.99  | 4.70  | 4.10 |
 | Phoenix-chat-7b |  6.49 | 6.08  | 6.49 | 6.85 |
-
-
-See [here](EVAL.md) for the detailed information regarding the evaluation metrics and criterias. 
-PS. Evaluation pipeline and code will be released soon.
-
-### Benchmark
 
 ## 🏭 Deployment
 
