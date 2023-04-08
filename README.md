@@ -50,7 +50,7 @@
 > The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king
 of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak
 > different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird)
-> languages.
+> languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it goes without saying this is also for the Chinese University of Hong Kong (CUHK).
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
