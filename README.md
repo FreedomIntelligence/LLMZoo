@@ -86,7 +86,7 @@
 - Due to LLaMA's license restrictions, we release our delta weights following [FastChat](https://github.com/lm-sys/FastChat). To use Chimera, obtain the original [LLaMA weights](https://huggingface.co/docs/transformers/main/model_doc/llama) and run the script:
 
 ```bash
-python3 apply_delta.py --base /path/to/llama-7b --target /output/path/to/chimera-chat-7b 
+python apply_delta.py --base /path/to/llama-7b --target /output/path/to/chimera-chat-7b 
 --delta FreedomIntelligence/chimera-chat-7b-delta
 ```
 

@@ -1,7 +1,7 @@
 """
 Apply the delta weights on top of a base model.
 Usage:
-python apply_delta.py --base ~/model_weights/llama-13b --target ~/model_weights/chimera-chat-13b --delta FreedomIntelligence/chimera-chat-13b
+python apply_delta.py --base ~/model_weights/llama-13b --target ~/model_weights/chimera-chat-13b --delta FreedomIntelligence/chimera-chat-13b-delta
 """
 import argparse
 
