@@ -35,7 +35,7 @@
 ```diff
 + Self-Instructed / Translated (Instruction, Input) in Language A
 - ---(Step 1) Translation--->
-+ Self-Instructed / Translated (Instruction, Input) in Language B
++ (Instruction, Input) in Language B
 - ---(Step 2) Generate--->
 + Output in Language B
 ```
