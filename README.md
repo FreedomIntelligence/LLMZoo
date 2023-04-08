@@ -11,8 +11,8 @@
 - Break  "AI supremacy"  and democratize ChatGPT
 
 > "AI supremacy" is understood as a company's absolute leadership and monopoly position in an AI field, which may even
-> include exclusive capabilities beyond general artificial intelligence. This is unacceptable for society and may even
-> lead to individual influence on the direction of the human future, thus bringing various hazards to society.
+> include exclusive capabilities beyond general artificial intelligence. This is unacceptable for AI community and may even
+> lead to individual influence on the direction of the human future, thus bringing various hazards to human society.
 
 - Make ChatGPT-like LLM accessible across countries and languages
 - Make AI open again. Every person, regardless of their skin color or place of birth, should have equal access to the
@@ -41,13 +41,13 @@
 
 ### Chimera (LLM mainly for Latin and Cyrillic languages)
 
-> The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLM, as LLAMA,
+> The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLMs, as LLAMA,
 > Guanaco, Vicuna, and
-> Alpaca were already used, and there are no more members in the camel family. Therefore, we find a similar hybrid
+> Alpaca have been already used, and there are no more members in the camel family. Therefore, we find a similar hybrid
 > creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia
 > and Asia Minor animal parts.
-> Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period to
-> play games overnight during high school and undergraduate time.
+> Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of
+> playing games overnight during high school and undergraduate time.
 
 ### Phoenix (LLM across Languages)
 
@@ -118,9 +118,9 @@ those of ChatGPT/GPT4, which include:
 
 LLM Zoo are mainly contributed by:
 
-- Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Chen Zhang](), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
+- Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](), [Chen Zhang](https://genezc.github.io/), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Fei Yu](), [Tiannan Wang](), [Guiming Chen]()
-- Others: Chen Zhang, Zhiyi Zhang, Jianquan Li and Xiang Wan
+- Others: Zhiyi Zhang, Jianquan Li and Xiang Wan
 
 As an open source project, we are open to contributions. Feel free to contribute if you have any ideas or find any
 issue.
