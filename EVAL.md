@@ -7,6 +7,38 @@ To gain a better grasp of our evaluation framework or participate in the evaluat
 
 Our evaluation data are encoded with **JSON Line** files.
 
+### Prompts for evaluation
+
+Our metric evaluation prompts within are carefully crafted for assessing overall performance on multiple perspectives including **helpfulness, relevance, accuracy, and level of detail** (following vicuna), assessing a single perspective from **relevance, diversity, and coherence**, or evaluating a specific type of questions such as **role playing**.
+Specifically:
+
+* `General`: The review is given by considering four aspects: helpfulness, relevance, accuracy, and level of detail
+* `Relevance`: The answer should address the question closely, accurately, detailedly, without repetition or redundancy.
+* `Diversity`: The response should be comprehensive and provide a range of information that is not limited to a single perspective.
+* `Coherence`: The response should be coherent and flow logically from one point to the next that is easy to read and understand without major gaps or inconsistencies.
+
+
+You can refer to `prompts/prompts_all.json` for further details. :
+
+```json
+{
+    "relevance":{
+		"role": "Assistant",
+		"prompt": "Relevance: The response should be closely related to the question and answer the question accurately with sufficient details without repetition or redundancy. The more relevant they are, the better.\nPlease evaluate the relevance of {num_str} AI assistants in response to the user question displayed above.\nPlease first clarify how each response addresses the question and whether it is accurate respectively.\nThen, provide a comparison on relevance among Assistant 1 - Assistant {num}, and you need to clarify which one is more relevant than or equal to another. Avoid any potential bias and ensuring that the order in which the responses were presented does not affect your judgment.\nIn the last line, order the {num_str} assistants. Please output a single line ordering Assistant 1 - Assistant {num}, where '>' means 'is better than' and '=' means 'is equal to'. The order should be consistent to your comparison. If there is not comparision that one is more relevant, it is assumed they have equivalent relevance ('=').",
+		"description": "Prompt for the relevance evaluation. Relevance: address the question closely, accurately, detailedly, without repetition or redundancy."
+	},
+    "diversity":{
+        ...
+    }
+}
+```
+
+
+NB: After conducting multiple tests on the automatic evaluation provided by ChatGPT, we found that rating the order of candidates is a more robust approach compared to directly assigning scores using ChatGPT.
+
+
+
+
 ### Questions
 
 `questions/` contains 140 questions we used for evaluation in English and in Chinese. We follow [Vicuna](https://github.com/lm-sys/FastChat) to build our test sets. Specifically, we remove 10 questions from math/code category and translate the other questions into Chinese to build our test sets. 
@@ -50,25 +82,7 @@ chimera-chat-7b:
    output_dir: 'output'                   # Directory of output files
 
 ```
-We store prompts in `prompts/prompts_all.json`. The prompts within are carefully crafted for assessing overall performance on multiple perspectives including **helpfulness, relevance, accuracy, and level of detail** (from vicuna), assessing a single perspective from **relevance, diversity, and coherence**, or evaluating a specific type of questions such as **role playing**.
 
-For example:
-
-```json
-{
-    "relevance":{
-		"role": "Assistant",
-		"prompt": "Relevance: The response should be closely related to the question and answer the question accurately with sufficient details without repetition or redundancy. The more relevant they are, the better.\nPlease evaluate the relevance of {num_str} AI assistants in response to the user question displayed above.\nPlease first clarify how each response addresses the question and whether it is accurate respectively.\nThen, provide a comparison on relevance among Assistant 1 - Assistant {num}, and you need to clarify which one is more relevant than or equal to another. Avoid any potential bias and ensuring that the order in which the responses were presented does not affect your judgment.\nIn the last line, order the {num_str} assistants. Please output a single line ordering Assistant 1 - Assistant {num}, where '>' means 'is better than' and '=' means 'is equal to'. The order should be consistent to your comparison. If there is not comparision that one is more relevant, it is assumed they have equivalent relevance ('=').",
-		"description": "Prompt for the relevance evaluation. Relevance: address the question closely, accurately, detailedly, without repetition or redundancy."
-	},
-    "diversity":{
-        ...
-    }
-}
-```
-
-
-NB: After conducting multiple tests on the automatic evaluation provided by ChatGPT, we found that rating the order of candidates is a more robust approach compared to directly assigning scores using ChatGPT.
 
 ### Reviews
 Refer to `review_output/` for reviews of different granularity where we assign the directory as follows:
