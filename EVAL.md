@@ -84,14 +84,9 @@ Refer to `review_output/` for reviews of different granularity where we assign t
 reveiw_output/
     en/
         coherence/
-            1/
-                metric.json
-                review_gpt35_cot.jsonl
-                ordering.txt
-            2/
-                ...
-            ...
-            final_metrics.json
+            metric.json
+            review_gpt35_cot.jsonl
+            ordering.txt
            
         diversity/
             ...
@@ -103,9 +98,9 @@ reveiw_output/
     model.txt
 ```
 
-
-The naming of the directory is based on the evaluated perspective. The `k/`-dir within them denotes the `k`-th evaluation (if needed). 
-For example, we obtain the **first** evaluation of the models' outputs from **Coherence** perspective on **English** datasets using ChatGPT (**gpt-3.5-turbo**) api in `review_output/en/coherence/1/review_gpt35_cot.jsonl`. 
+<!-- 
+The naming of the directory is based on the evaluated perspective. The `k/`-dir within them denotes the `k`-th evaluation (if needed).  -->
+For example, we obtain the **first** evaluation of the models' outputs from **Coherence** perspective on **English** datasets using ChatGPT (**gpt-3.5-turbo**) api in `review_output/en/coherence/review_gpt35_cot.jsonl`. 
 
 ```json
 {
