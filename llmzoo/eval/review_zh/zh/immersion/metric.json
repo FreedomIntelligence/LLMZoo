@@ -1,0 +1,18 @@
+{
+    "chimera-7b": {
+        "order": 2.7,
+        "score": 4.666666666666667
+    },
+    "phoenix-7b": {
+        "order": 1.6,
+        "score": 8.083333333333334
+    },
+    "chinese-alpaca-7b": {
+        "order": 3.1,
+        "score": 3.4166666666666665
+    },
+    "chimera-13b": {
+        "order": 1.8,
+        "score": 6.333333333333334
+    }
+}

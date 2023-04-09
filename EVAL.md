@@ -85,7 +85,7 @@ reveiw_output/
     en/
         coherence/
             metric.json
-            review_gpt35_cot.jsonl
+            review.jsonl
             ordering.txt
            
         diversity/
@@ -98,10 +98,8 @@ reveiw_output/
     model.txt
 ```
 
-<!-- 
-The naming of the directory is based on the evaluated perspective. The `k/`-dir within them denotes the `k`-th evaluation (if needed).  -->
-For example, we obtain the **first** evaluation of the models' outputs from **Coherence** perspective on **English** datasets using ChatGPT (**gpt-3.5-turbo**) api in `review_output/en/coherence/review_gpt35_cot.jsonl`. 
 
+For example, we obtain the **first** evaluation of the models' outputs from **Coherence** perspective on **English** datasets using ChatGPT (**gpt-3.5-turbo**) api in `review_output/en/coherence/review.jsonl`. 
 ```json
 {
   "reviewer_id": "gpt-3.5-turbo",
@@ -156,6 +154,46 @@ We then assign different scores based on the performance of different models on 
 4|2.5|
 
 Then we compute the overall scores by averaging over total questions.
+
+
+for example (`review_output/en/coherence/metric.jsonl`):
+```json
+{
+    "phoenix-7b": {
+        "winning": {
+            "gpt3.5": 38,
+            "tie": 28,
+            "model": 4,
+            "%model": 0.05714285714285714
+        },
+        "order": {
+            "gpt3.5": 1.1142857142857143,
+            "model": 1.9142857142857144
+        },
+        "score": {
+            "gpt3.5": 9.583333333333334,
+            "model": 6.702380952380952,
+            "%model": 0.6993788819875776
+        }
+    },
+    "chimera-13b": {
+        ...
+    },
+    ...
+}
+```
+* `winning`: comparison between turbo and the model (e.g. phoenix-7b).
+  * `gpt3.5`: times of "turbo > model"
+  * `tie`: times of "turbo = model"
+  * `model`: times of "model > turbo"
+  * `%model`: rate of "model > turbo"
+* `order`: the average order
+  * `gpt3.5`: average order of turbo
+  * `model`: average order of the model
+* `score`: the average score
+  * `gpt3.5`: average score of turbo
+  * `model`: average score of the model
+  * `%model`: "model_score / turbo_score"
 
 
 If you prefer relative orders of the candidate models, you can directly see the ranking results in `review_output/en/general/ordering.txt`. For example:

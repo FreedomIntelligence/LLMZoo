@@ -1,0 +1,5 @@
+Model                         Ranking Score                 Rank                          
+phoenix-7b                    1.6                           1                             
+chimera-7b                    1.9857142857142858            2                             
+chimera-13b                   2.157142857142857             3                             
+chinese-alpaca-7b             2.4571428571428573            4                             

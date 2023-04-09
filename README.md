@@ -187,7 +187,7 @@ LLM Zoo are mainly contributed by:
 
 - Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](https://fjiangai.github.io/)
   , [Chen Zhang](https://genezc.github.io/), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
-- Evaluation: [Fei Yu](), [Tiannan Wang](), [Guiming Chen]()
+- Evaluation: [Fei Yu](https://github.com/OakYU), [Tiannan Wang](), [Guiming Chen]()
 - Others: Zhiyi Zhang, Jianquan Li and Xiang Wan
 
 As an open source project, we are open to contributions. Feel free to contribute if you have any ideas or find any

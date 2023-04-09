@@ -1,0 +1,5 @@
+Model                         Ranking Score                 Rank                          
+turbo                         1.6428571428571428            1                             
+phoenix-7b                    1.7714285714285714            2                             
+chimera-13b                   2.1857142857142855            3                             
+chimera-7b                    2.2285714285714286            4                             

@@ -1,0 +1,4 @@
+Model                         Ranking Score                 Rank                          
+vicuna-7b                     1.3428571428571427            1                             
+phoenix-7b                    1.8                           2                             
+chimera-7b                    2.0                           3                             

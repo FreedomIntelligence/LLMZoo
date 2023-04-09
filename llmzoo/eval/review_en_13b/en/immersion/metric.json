@@ -1,0 +1,10 @@
+{
+    "chimera-13b": {
+        "order": 1.6,
+        "score": 7.0
+    },
+    "vicuna-13": {
+        "order": 1.1,
+        "score": 9.5
+    }
+}

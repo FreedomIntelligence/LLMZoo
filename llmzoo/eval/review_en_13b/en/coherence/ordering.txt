@@ -1,0 +1,3 @@
+Model                         Ranking Score                 Rank                          
+chimera-13b                   1.2285714285714286            1                             
+vicuna-13b                    1.4142857142857144            2                             

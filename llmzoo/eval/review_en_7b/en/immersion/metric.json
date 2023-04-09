@@ -1,0 +1,14 @@
+{
+    "chimera-7b": {
+        "order": 2.1,
+        "score": 5.833333333333334
+    },
+    "phoenix-7b": {
+        "order": 2.0,
+        "score": 6.0
+    },
+    "vicuna-7b": {
+        "order": 1.5,
+        "score": 7.833333333333334
+    }
+}
