@@ -2,16 +2,12 @@ import argparse
 import json
 import os
 
-import openai
-import tqdm
-import ray
-import time
 from collections import defaultdict
-from tqdm import tqdm
 
-MAX_SCORE_ORDER=10
+MAX_SCORE_ORDER = 10
 
-def read_jsonl(path: str, key: str=None):
+
+def read_jsonl(path: str, key: str = None):
     data = []
     with open(os.path.expanduser(path)) as f:
         for line in f:
@@ -74,7 +70,7 @@ if __name__ == '__main__':
                         beat_count[(gpt35_id, model_id)][model_id] += 1
                     else:
                         beat_count[(gpt35_id, model_id)]['Tie'] += 1
-                    
+
                 order_count[model_id] += model_order
                 score_count[model_id] += MAX_SCORE_ORDER / model_order
 
@@ -100,30 +96,28 @@ if __name__ == '__main__':
                         beat_count[(gpt35_id, model_id)][model_id] += 1
                     else:
                         beat_count[(gpt35_id, model_id)]['Tie'] += 1
-                
+
                 score_count[model_id] += model_score
-            
+
             if not args.horiz:
                 score_count[gpt35_id] += gpt35_score
-
-    
 
     res = {}
     for model_id in model_ids:
         if not args.horiz:
             if args.order:
                 res[model_id] = {
-                    'winning':{
+                    'winning': {
                         'gpt3.5': beat_count[(gpt35_id, model_id)][gpt35_id],
                         'tie': beat_count[(gpt35_id, model_id)]['Tie'],
                         'model': beat_count[(gpt35_id, model_id)][model_id],
                         '%model': beat_count[(gpt35_id, model_id)][model_id] / (n_question - n_skip),
                     },
-                    'order':{
+                    'order': {
                         'gpt3.5': order_count[gpt35_id] / (n_question - n_skip),
                         'model': order_count[model_id] / (n_question - n_skip),
                     },
-                    'score':{
+                    'score': {
                         'gpt3.5': score_count[gpt35_id] / (n_question - n_skip),
                         'model': score_count[model_id] / (n_question - n_skip),
                         '%model': score_count[model_id] / score_count[gpt35_id],
@@ -131,13 +125,13 @@ if __name__ == '__main__':
                 }
             else:
                 res[model_id] = {
-                    'winning':{
+                    'winning': {
                         'gpt3.5': beat_count[(gpt35_id, model_id)][gpt35_id],
                         'tie': beat_count[(gpt35_id, model_id)]['Tie'],
                         'model': beat_count[(gpt35_id, model_id)][model_id],
                         '%model': beat_count[(gpt35_id, model_id)][model_id] / (n_question - n_skip),
                     },
-                    'score':{
+                    'score': {
                         'gpt3.5': score_count[gpt35_id] / (n_question - n_skip),
                         'model': score_count[model_id] / (n_question - n_skip),
                         '%model': score_count[model_id] / score_count[gpt35_id],
@@ -153,8 +147,6 @@ if __name__ == '__main__':
                 res[model_id] = {
                     'score': score_count[model_id] / (n_question - n_skip),
                 }
-    
+
     with open(args.output, 'w') as f:
         f.write(json.dumps(res, indent=4) + '\n')
-
-

@@ -1,24 +1,18 @@
 import argparse
-import random
 import json
-import numpy as np
-from tqdm import tqdm
-import os
-import openai
+
 import backoff
+import openai
 import ray
-import re
 import shortuuid
 
 MODEL_ID = 'gpt-3.5-turbo'
-
 
 
 @ray.remote(num_cpus=4)
 @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
 def completions_with_backoff(**kwargs):
     return openai.ChatCompletion.create(**kwargs)
-
 
 
 if __name__ == '__main__':
@@ -54,7 +48,6 @@ if __name__ == '__main__':
         handles.append(completions_with_backoff.remote(model='gpt-3.5-turbo', messages=message_log))
         samples.append(sample)
 
-
     output_list = ray.get(handles)
     with open(args.output, 'w', encoding='utf-8') as f:
         for idx, output in enumerate(output_list):
@@ -62,5 +55,4 @@ if __name__ == '__main__':
             samples[idx]['text'] = text
             samples[idx]['metadata'] = {}
             line = json.dumps(samples[idx], ensure_ascii=False)
-            f.write(line+'\n')
-
+            f.write(line + '\n')

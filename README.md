@@ -128,7 +128,7 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 
 We rank the models' performance according to different aspects.
 
-See [here](EVAL.md) for the detailed information regarding the evaluation metrics and criterias.
+See [here](llmzoo/eval/README.md) for the detailed information regarding the evaluation metrics and criterias.
 
 | En | General | Coherence | Diversity  | Relevance |
 | --- | --- | --- | --- | --- |
