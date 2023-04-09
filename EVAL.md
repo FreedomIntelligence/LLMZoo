@@ -1,14 +1,6 @@
 # LLM Evaluation 🧐
 
-## Code will be released soon
-
-## Data Format
-To gain a better grasp of our evaluation framework or participate in the evaluation process, please familiarize yourself with the data format we used for evaluation.
-
-Our evaluation data are encoded with **JSON Line** files.
-
-### Prompts for evaluation
-
+## Overview
 Our metric evaluation prompts within are carefully crafted for assessing overall performance on multiple perspectives including **helpfulness, relevance, accuracy, and level of detail** (following vicuna), assessing a single perspective from **relevance, diversity, and coherence**, or evaluating a specific type of questions such as **role playing**.
 Specifically:
 
@@ -32,12 +24,14 @@ You can refer to `prompts/prompts_all.json` for further details. :
     }
 }
 ```
-
-
-NB: After conducting multiple tests on the automatic evaluation provided by ChatGPT, we found that rating the order of candidates is a more robust approach compared to directly assigning scores using ChatGPT.
+Note: After conducting multiple tests on the automatic evaluation provided by ChatGPT, we found that rating the order of candidates is a more robust approach compared to directly assigning scores using ChatGPT.
 
 
 
+## Data Format
+To gain a better grasp of our evaluation framework or participate in the evaluation process, please familiarize yourself with the data format we used for evaluation.
+
+Our evaluation data are encoded with **JSON Line** files.
 
 ### Questions
 
