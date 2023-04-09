@@ -185,7 +185,7 @@ those of ChatGPT/GPT4, which include:
 
 LLM Zoo are mainly contributed by:
 
-- Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang]()
+- Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](https://fjiangai.github.io/)
   , [Chen Zhang](https://genezc.github.io/), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Fei Yu](), [Tiannan Wang](), [Guiming Chen]()
 - Others: Zhiyi Zhang, Jianquan Li and Xiang Wan
