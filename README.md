@@ -125,24 +125,45 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 ### Retrieval-augmented Models (coming soon)
 
 ## 🧐 Evaluation and Benchmark
-
-We rank the models' performance according to different aspects.
-
+Following [Vicuna](https://github.com/lm-sys/FastChat), we present pari-wise comparison with ChatGPT.
+| Models| ChatGPT score | Model score |
+| --- | --- | --- | 
+| Chimera-chat-7b | 7.8  | 8.09  |
+| Chimera-chat-13b | 7.73  | 8.59 |
+| Phoenix-chat-7b |  7.77 |  8.07 |
+We also provide a bilingual, multidimensional comparison across different opensource models with ours.
 See [here](EVAL.md) for the detailed information regarding the evaluation metrics and criterias.
 
-| En | General | Coherence | Diversity  | Relevance |
-| --- | --- | --- | --- | --- |
-| ChatGPT |  8.25|  9.86 |  8.62 | 9.93 |
-| Chimera-chat-7b | 5.82  | 5.21  | 6.32  | 5.20  |
-| Chimera-chat-13b | 6.01  | 5.30 | 6.32  | 5.33  |
-| Phoenix-chat-7b |  5.76 |  5.08 | 6.87  |  5.48 |
+Chimera-chat-7b vs Chimera-chat-13b vs Phoenix-chat-7b vs Chinese-Alpaca-7b  
 
-| Zh | General | Coherence | Diversity  | Relevance |
+|  Zh | General | Coherence | Diversity  | Relevance |
+| --- | --- | --- | --- | --- |
+| Chimera-chat-7b |  #3 |  #2  | #2  | #2  |
+| Chimera-chat-13b |  #2 |  #3  | #3  | #3  |
+| Phoenix-chat-7b | #1  |  #1 | #1  |  #1 |
+| Chinese-Alpaca-7b |  #4 |  #4 | #4  |  #4 |
+
+Chimera-chat-7b vs Phoenix-chat-7b vs Vicuna-7b
+
+|  En | General | Coherence | Diversity  | Relevance |
+| --- | --- | --- | --- | --- |
+| Chimera-chat-7b |  #3 |  #1  | #3  | #2  |
+| Phoenix-chat-7b | #2  |  #2 | #2  |  #3 |
+| Vicuna-7b |  #1 |  #3 | #1  |  #1 |
+
+Chimera-chat-13b vs Vicuna-13b
+
+|  En | General | Coherence | Diversity  | Relevance |
+| --- | --- | --- | --- | --- |
+| Chimera-chat-13b |  #2 |  #1  | #2  | #2  |
+| Vicuna-13b |  #1 |  #2 | #1  |  #1 |
+
+<!-- | Zh | General | Coherence | Diversity  | Relevance |
 | --- | --- | --- | --- | --- |
 | ChatGPT | 8.49 | 9.86  | 8.96 | 9.64  |
 | Chimera-chat-7b | 5.07  | 4.75  | 4.51 |  4.36 |
 | Chimera-chat-13b | 4.25  | 3.99  | 4.70  | 4.10 |
-| Phoenix-chat-7b |  6.49 | 6.08  | 6.49 | 6.85 |
+| Phoenix-chat-7b |  6.49 | 6.08  | 6.49 | 6.85 | -->
 
 ## 🏭 Deployment
 
