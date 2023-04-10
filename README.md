@@ -125,18 +125,8 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 ### Retrieval-augmented Models (coming soon)
 
 ## 🧐 Evaluation and Benchmark
-### Evaluation Method #1
-Following [Vicuna](https://github.com/lm-sys/FastChat), we present pair-wise comparisons with ChatGPT.
-Note that we used `gpt-3.5-turbo` instead of `gpt-4`.
 
-| Models| ChatGPT score | Model score |
-| --- | --- | --- | 
-| Chimera-chat-7b | 7.8  | 8.09  |
-| Chimera-chat-13b | 7.73  | 8.59 |
-| Phoenix-chat-7b |  7.77 |  8.07 |
-
-### Evaluation Method #2
-We also provide a bilingual, multidimensional comparison across different open-source models with ours.
+We provide a bilingual, multidimensional comparison across different open-source models with ours.
 See [here](llmzoo/eval/README.md) for detailed information regarding the evaluation metrics and criteria.
 
 * En
