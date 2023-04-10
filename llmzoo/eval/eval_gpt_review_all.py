@@ -1,15 +1,12 @@
 import argparse
 import json
 import os
-
-import openai
-import tqdm
-import ray
-import time
-import backoff
-from tqdm import tqdm
 import re
+
+import backoff
 import numpy as np
+import openai
+import ray
 
 
 @ray.remote(num_cpus=4)
@@ -24,12 +21,10 @@ def get_eval(content: str, max_tokens: int):
             'role': 'user',
             'content': content,
         }],
-        temperature=0,  
+        temperature=0,
         # max_tokens=max_tokens,
     )
     return response['choices'][0]['message']['content']
-
-
 
 
 def parse_score_cot(review):
@@ -44,7 +39,7 @@ def parse_score_cot(review):
         else:
             sl = []
             for i in range(n_ans):
-                sl.append(re.search(r'Assistant %d: ([0-9\.]+)' % (i+1), review).group(1))
+                sl.append(re.search(r'Assistant %d: ([0-9\.]+)' % (i + 1), review).group(1))
         if len(sl) == n_ans:
             return [float(s) for s in sl]
         else:
@@ -72,14 +67,14 @@ def parse_order_cot(review):
         order = [0] * n_ans
         cur_order = 1
         num_eq = 0
-        order[ordered_assist[0]-1] = cur_order
+        order[ordered_assist[0] - 1] = cur_order
         for comp, assist in zip(ordered_comp, ordered_assist[1:]):
             if comp == '>':
                 cur_order += num_eq + 1
-                order[assist-1] = cur_order
+                order[assist - 1] = cur_order
                 num_eq = 0
             else:
-                order[assist-1] = cur_order
+                order[assist - 1] = cur_order
                 num_eq += 1
         return order
 
@@ -89,7 +84,7 @@ def parse_order_cot(review):
         return [-1] * n_ans
 
 
-def read_jsonl(path: str, key: str=None):
+def read_jsonl(path: str, key: str = None):
     data = []
     with open(os.path.expanduser(path)) as f:
         for line in f:
@@ -100,7 +95,6 @@ def read_jsonl(path: str, key: str=None):
         data.sort(key=lambda x: x[key])
         data = {item[key]: item for item in data}
     return data
-
 
 
 num2str = {2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
@@ -147,7 +141,8 @@ if __name__ == '__main__':
         assert (args.order and 'order' in prompt) or (not args.order and 'score' in prompt)
         role = rule['role']
         content = f'[Question]\n{ques}\n\n'
-        content += '\n\n'.join([f'[{role} {i}]\n{ans}\n\n[End of {role} {i}]' for i, ans in enumerate(ans_list, start=1)])
+        content += '\n\n'.join(
+            [f'[{role} {i}]\n{ans}\n\n[End of {role} {i}]' for i, ans in enumerate(ans_list, start=1)])
         content += '\n\n' + f'[System]\n{prompt}\n\n'
 
         js_list.append({
@@ -164,7 +159,6 @@ if __name__ == '__main__':
             }})
         idx += 1
         handles.append(get_eval.remote(content, args.max_tokens))
-
 
     n_errors = 0
     reviews = ray.get(handles)

@@ -132,7 +132,7 @@ Following [Vicuna](https://github.com/lm-sys/FastChat), we present pari-wise com
 | Chimera-chat-13b | 7.73  | 8.59 |
 | Phoenix-chat-7b |  7.77 |  8.07 |
 We also provide a bilingual, multidimensional comparison across different opensource models with ours.
-See [here](EVAL.md) for the detailed information regarding the evaluation metrics and criterias.
+See [here](llmzoo/eval/README.md) for the detailed information regarding the evaluation metrics and criterias.
 
 Chimera-chat-7b vs Chimera-chat-13b vs Phoenix-chat-7b vs Chinese-Alpaca-7b  
 

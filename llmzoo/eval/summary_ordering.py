@@ -1,10 +1,5 @@
 import argparse
 import json
-import os
-
-import numpy as np
-
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -41,7 +36,6 @@ if __name__ == '__main__':
             comp_info.append((model_name, order, cur_idx))
             num_eq += 1
         last_order = order
-        
 
     with open(args.output, 'w') as f:
         f.write('{0:<30}{1:<30}{2:<30}\n'.format('Model', 'Ranking Score', 'Rank'))
