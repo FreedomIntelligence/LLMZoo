@@ -66,7 +66,7 @@
 - User-generated ChatGPT conversations
 
 ```diff
-+ ChatGPT coversations shared on Internet
++ ChatGPT conversations shared on the Internet
 - ---(Step 1) Crawl--->
 + Multi-round conversation data
 ```
@@ -79,7 +79,7 @@
 
 > The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLMs, as LLAMA,
 > Guanaco, Vicuna, and
-> Alpaca have been already used, and there are no more members in the camel family. Therefore, we find a similar hybrid
+> Alpaca have already been used, and there are no more members in the camel family. Therefore, we find a similar hybrid
 > creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia
 > and Asia Minor animal parts.
 > Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of
@@ -125,25 +125,21 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 ### Retrieval-augmented Models (coming soon)
 
 ## 🧐 Evaluation and Benchmark
-Following [Vicuna](https://github.com/lm-sys/FastChat), we present pari-wise comparison with ChatGPT.
+### Evaluation Method #1
+Following [Vicuna](https://github.com/lm-sys/FastChat), we present pair-wise comparisons with ChatGPT.
+Note that we used `gpt-3.5-turbo` instead of `gpt-4`.
+
 | Models| ChatGPT score | Model score |
 | --- | --- | --- | 
 | Chimera-chat-7b | 7.8  | 8.09  |
 | Chimera-chat-13b | 7.73  | 8.59 |
 | Phoenix-chat-7b |  7.77 |  8.07 |
-We also provide a bilingual, multidimensional comparison across different opensource models with ours.
-See [here](llmzoo/eval/README.md) for the detailed information regarding the evaluation metrics and criterias.
 
-Chimera-chat-7b vs Chimera-chat-13b vs Phoenix-chat-7b vs Chinese-Alpaca-7b  
+### Evaluation Method #2
+We also provide a bilingual, multidimensional comparison across different open-source models with ours.
+See [here](llmzoo/eval/README.md) for detailed information regarding the evaluation metrics and criteria.
 
-|  Zh | General | Coherence | Diversity  | Relevance |
-| --- | --- | --- | --- | --- |
-| Chimera-chat-7b |  #3 |  #2  | #2  | #2  |
-| Chimera-chat-13b |  #2 |  #3  | #3  | #3  |
-| Phoenix-chat-7b | #1  |  #1 | #1  |  #1 |
-| Chinese-Alpaca-7b |  #4 |  #4 | #4  |  #4 |
-
-Chimera-chat-7b vs Phoenix-chat-7b vs Vicuna-7b
+* En
 
 |  En | General | Coherence | Diversity  | Relevance |
 | --- | --- | --- | --- | --- |
@@ -151,12 +147,19 @@ Chimera-chat-7b vs Phoenix-chat-7b vs Vicuna-7b
 | Phoenix-chat-7b | #2  |  #2 | #2  |  #3 |
 | Vicuna-7b |  #1 |  #3 | #1  |  #1 |
 
-Chimera-chat-13b vs Vicuna-13b
-
 |  En | General | Coherence | Diversity  | Relevance |
 | --- | --- | --- | --- | --- |
 | Chimera-chat-13b |  #2 |  #1  | #2  | #2  |
 | Vicuna-13b |  #1 |  #2 | #1  |  #1 |
+
+* Zh
+
+|  Zh | General | Coherence | Diversity  | Relevance |
+| --- | --- | --- | --- | --- |
+| Chimera-chat-7b |  #3 |  #2  | #2  | #2  |
+| Chimera-chat-13b |  #2 |  #3  | #3  | #3  |
+| Phoenix-chat-7b | #1  |  #1 | #1  |  #1 |
+| Chinese-Alpaca-7b |  #4 |  #4 | #4  |  #4 |
 
 <!-- | Zh | General | Coherence | Diversity  | Relevance |
 | --- | --- | --- | --- | --- |
@@ -204,19 +207,19 @@ those of ChatGPT/GPT4, which include:
 
 ## 🙌 Contributors
 
-LLM Zoo are mainly contributed by:
+LLM Zoo is mainly contributed by:
 
 - Data and Model: [Zhihong Chen](https://zhjohnchan.github.io/), [Junying Chen](), [Hongbo Zhang](), [Feng Jiang](https://fjiangai.github.io/)
   , [Chen Zhang](https://genezc.github.io/), [Benyou Wang](https://wabyking.github.io/old.html) (Advisor)
 - Evaluation: [Fei Yu](https://github.com/OakYU), [Tiannan Wang](), [Guiming Chen]()
 - Others: Zhiyi Zhang, Jianquan Li and Xiang Wan
 
-As an open source project, we are open to contributions. Feel free to contribute if you have any ideas or find any
+As an open-source project, we are open to contributions. Feel free to contribute if you have any ideas or find any
 issue.
 
 ## Acknowledgement
 
-We are aware that our works are inspired by the following works, include but are not limited to
+We are aware that our works are inspired by the following works, including but not limited to
 
 - LLaMA: https://github.com/facebookresearch/llama
 - Bloom: https://huggingface.co/bigscience/bloom
@@ -224,14 +227,14 @@ We are aware that our works are inspired by the following works, include but are
 - Alpaca: https://github.com/tatsu-lab/stanford_alpaca
 - Vicuna: https://github.com/lm-sys/FastChat
 
-Without these nothing could happen in this repository
+Without these, nothing could happen in this repository.
 
 ## Citation
 
 ```angular2
 @misc{llm-zoo-2023,
   title={LLM Zoo: democratizing ChatGPT},
-  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Fei Yu and Tiannan Wang and Chen Zhang and Zhiyi Zhang and Jianquan Li and and Xiang Wan and Haizhou Li and Benyou Wang},
+  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Fei Yu and Tiannan Wang and Chen Zhang and Zhiyi Zhang and Jianquan Li and Xiang Wan and Haizhou Li and Benyou Wang},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
