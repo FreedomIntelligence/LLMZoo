@@ -132,6 +132,27 @@ Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-m
 We provide a bilingual, multidimensional comparison across different open-source models with ours.
 See [here](llmzoo/eval/README.md) for detailed information regarding the evaluation metrics and criteria.
 
+* Zh
+
+The pair-wise comparison of `Phoenix-chat-7b` model with others.
+|  Zh |  Model Score | Phoenix Score |
+| --- | --- | --- |
+| ChatGPT | 8.41 | 7.35   |
+| Baidu-Wenxin |  7.38  | 7.15  | 
+| Chinese-Alpaca-7b | 5.51  | 7.15  |
+| BELLE-7b-2m | 5.91  |  7.25  |
+| ChatGLM-6B | 7.56  | 7.15   |
+| Chinese-Alpaca-13b | 6.02  | 7.54  | 
+
+
+
+|  Zh | General | Coherence | Diversity  | Relevance |
+| --- | --- | --- | --- | --- |
+| Chimera-chat-7b |  #3 |  #2  | #2  | #2  |
+| Chimera-chat-13b |  #2 |  #3  | #3  | #3  |
+| Phoenix-chat-7b | #1  |  #1 | #1  |  #1 |
+| Chinese-Alpaca-7b |  #4 |  #4 | #4  |  #4 |
+
 * En
 
 |  En | General | Coherence | Diversity  | Relevance |
@@ -145,15 +166,7 @@ See [here](llmzoo/eval/README.md) for detailed information regarding the evaluat
 | Chimera-chat-13b |  #2 |  #1  | #2  | #2  |
 | Vicuna-13b |  #1 |  #2 | #1  |  #1 |
 
-* Zh
-
-|  Zh | General | Coherence | Diversity  | Relevance |
-| --- | --- | --- | --- | --- |
-| Chimera-chat-7b |  #3 |  #2  | #2  | #2  |
-| Chimera-chat-13b |  #2 |  #3  | #3  | #3  |
-| Phoenix-chat-7b | #1  |  #1 | #1  |  #1 |
-| Chinese-Alpaca-7b |  #4 |  #4 | #4  |  #4 |
-
+* 
 <!-- | Zh | General | Coherence | Diversity  | Relevance |
 | --- | --- | --- | --- | --- |
 | ChatGPT | 8.49 | 9.86  | 8.96 | 9.64  |
