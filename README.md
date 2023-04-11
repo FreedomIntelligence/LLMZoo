@@ -42,7 +42,7 @@
 ```diff
 + (Role, Instruction, Input) seeds
 - ---(Step 1) Self Instruct--->
-+ (Role, Instruction, Input, Output) samples
++ (Role, Instruction, Input) samples
 - ---(Step 2) generate output Instruct--->
 + (Role, Instruction, Input) ---> Output
 ```
