@@ -118,6 +118,7 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 > around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in
 > public cloud servers in case of massive requests.
 
+See our models in https://www.huatuogpt.cn/ (API key required) .
 Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-models.md) 
 
 ### Legal GPT (coming soon)
