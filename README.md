@@ -28,20 +28,14 @@
 - Multilingual instructions (language-agostic instructions with post-translation)
 
 ```diff
-+ (Instruction, Input, Output) in Language A
-- ---(Step 1) Translation--->
-+ (Instruction, Input, Output) in Language B
-```
-
-- Language-specific instructions
-
-```diff
 + Self-Instructed / Translated (Instruction, Input) in Language A
-- ---(Step 1) Translation--->
-+ (Instruction, Input) in Language B
+- ---(Step 1) Translation --->
++ (Instruction, Input) in Language B (B is randomly sampled w.r.t. the probability distribution of realistic languages)
 - ---(Step 2) Generate--->
 + Output in Language B
 ```
+
+- Language-specific instructions are manually design by ourself + self-instruction
 
 - **User**-centered instruction (**Modular** instruction construction)
 
@@ -49,6 +43,8 @@
 + (Role, Instruction, Input) seeds
 - ---(Step 1) Self Instruct--->
 + (Role, Instruction, Input, Output) samples
+- ---(Step 2) generate output Instruct--->
++ (Role, Instruction, Input) ---> Output
 ```
 
 - **Chat**-based instructions (user, instruction, conversations)
@@ -240,7 +236,7 @@ Without these, nothing could happen in this repository.
 ```angular2
 @misc{llm-zoo-2023,
   title={LLM Zoo: democratizing ChatGPT},
-  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Fei Yu and Tiannan Wang and Chen Zhang and Zhiyi Zhang and Jianquan Li and Xiang Wan and Haizhou Li and Benyou Wang},
+  author={Zhihong Chen and Junying Chen and Hongbo Zhang and Feng Jiang and Guiming Chen and Fei Yu and Tiannan Wang and Juhao Liang and Chen Zhang and Zhiyi Zhang and Jianquan Li and Xiang Wan and Haizhou Li and Benyou Wang},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
