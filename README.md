@@ -35,10 +35,8 @@
 + Output in Language B
 ```
 
+
 - Language-specific instructions are manually design by ourself + self-instruction
-
-- **User**-centered instruction (**Modular** instruction construction)
-
 
 
 > Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
@@ -56,6 +54,10 @@
 > Check open User-chatGPT conversation data in [OpenChatGPT](https://github.com/FreedomIntelligence/OpenChatGPT).
 
 ## 🐼 Models
+
+The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a receip to achieve a proficient language model. The rationale  is that the * **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
+
+
 
 ### Chimera (LLM mainly for Latin and Cyrillic languages)
 
