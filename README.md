@@ -39,21 +39,7 @@
 
 - **User**-centered instruction (**Modular** instruction construction)
 
-```diff
-+ (Role, Instruction, Input) seeds
-- ---(Step 1) Self Instruct--->
-+ (Role, Instruction, Input) samples
-- ---(Step 2) generate output Instruct--->
-+ (Role, Instruction, Input) ---> Output
-```
 
-- **Chat**-based instructions (user, instruction, conversations)
-
-```diff
-+ (Instruction, Input) seeds
-- ---(Step 1) Multi-bot Chat--->
-+ Pseudo Multi-round conversation data
-```
 
 > Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
 
