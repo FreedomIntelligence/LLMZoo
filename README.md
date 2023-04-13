@@ -56,23 +56,23 @@
 ## 🐼 Models
 
 | Model | Backbone | \#paras | Open-source model | Open-source data | Claimed Language | Post-training data (instruction) | Post-training language (instruction) | Post-training data (conversation) | Post-training language (conversation) | Release date |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | -- | --- | --- | --- | --- | --- | --- | --- |
 | ChatGPT | - | - | ❌ | ❌ | multi |  |  |  |  | 11/30/22 |
 | Wenxin | - | - | ❌ | ❌ | ch |  |  |  |  | 03/16/23 |
 | ChatGLM | GLM | 6B | ✅ | ❌ | en/ch |  |  |  |  | 03/16/23 |
 | Alpaca | LLaMA | 7B | ❌ | ✅ | en | 52K | en | ❌ | ❌ | 03/13/23 |
 | Dolly | GPT-J | 6B | ✅ | ✅ | en | 52k | en | ❌ | ❌ | 03/24/23 |
 | BELLE | BLOOMZ | 7B/13B | ✅ | ✅ | ch | 1.5M | ch | ❌ | ❌ |
-| Guanaco| LLaMA | 7B | :✅ | :✅ | en/cn/ja/de | 534K | 4 | ❌ | ❌ | 03/26/23 |
-| Chinese-alpaca | LLaMA | 7/13B | :✅ | :✅ | en/ch | 2M/3M | en/ch | ❌ | ❌ | 03/28/23 |
-| LuoTuo | LLaMA | 7B | :✅ | :✅ | cn | 52k | cn | ❌ | ❌ | 03/31/23 |
-| Vicuna | LLaMA | 7/13B | :✅ | ❌ | en | ❌ | ❌ | 70K | multi | 03/13/23 |
+| Guanaco| LLaMA | 7B | ✅ | ✅ | en/cn/ja/de | 534K | 4 | ❌ | ❌ | 03/26/23 |
+| Chinese-alpaca | LLaMA | 7/13B | ✅ | ✅ | en/ch | 2M/3M | en/ch | ❌ | ❌ | 03/28/23 |
+| LuoTuo | LLaMA | 7B | ✅ | ✅ | cn | 52k | cn | ❌ | ❌ | 03/31/23 |
+| Vicuna | LLaMA | 7/13B | ✅ | ❌ | en | ❌ | ❌ | 70K | multi | 03/13/23 |
 | Koala | LLaMA | 13B | ✅ | ✅ | en | 355K | en | 117K | en | 04/03/23 |
 | BAIZE | LLaMA | 7/13/30B | ✅ | ✅ | en | ❌ | ❌ | 111.5K | en | 04/04/23 |
 | **Phoenix** | BLOOMZ | 7B | ✅ | ✅ | multi |  | 40+ |  |  | 04/08/23 |
 | **Latin Phoenix (Chimera)** | LLaMA | 7/13B | ✅ | ✅ | Latin |  | Latin|  |  | 04/08/23 |
 
-The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that the * **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
+The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that *the **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
 
 
 
