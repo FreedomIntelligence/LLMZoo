@@ -1,6 +1,5 @@
 numpy
 torch
-git+https://github.com/huggingface/tokenizers.git
 git+https://github.com/huggingface/transformers.git
 accelerate
 sentencepiece
