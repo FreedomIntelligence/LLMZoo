@@ -144,14 +144,9 @@ We provide a bilingual, multidimensional comparison across different open-source
 
 The pair-wise comparison of `Phoenix-inst-chat-7b` model with others.
 
-| Model                                      | Ratio |
-|--------------------------------------------|-------|
-| Phoenix-inst-chat-7b vs. **ChatGPT**       | 85.2\% |
-| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**       | 96.8\% |
-| Phoenix-inst-chat-7b vs. **ChatGLM-6b**         | 94.6\% |
-| **Phoenix-inst-chat-7b** vs. Belle-7b-2m        | 122.7\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b  | 135.3\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-13b | 125.2\% |
+<div align=center>
+<img src="assets/comparsion_chinese.png" width = "640" alt="comparsion_chinese" align=center />
+</div>
 
 It shows that Phoenix-chat-7b achieves 85.2\% performance of ChatGPT in Chinese. It slightly underperforms Baidu-Wenxin (96.8\%) and ChatGLM-6b (94.6 \%), both are not fully open-source;  ChatGLM-6b only provides model weights without training data and details. Although Phoenix is a multilingual LLM, it achieves SOTA performance among all open-source Chinese LLMs.
 
@@ -163,11 +158,9 @@ It shows that Phoenix-chat-7b achieves 85.2\% performance of ChatGPT in Chinese.
 
 The pair-wise comparison of `Chimera-inst-chat-7b` model with others.
 
-| Model | Ratio |
-|-------|-------|
-| Chimera-inst-chat-7b vs.  **ChatGPT**  | 85.2\% |
-| Chimera-inst-chat-13b vs.  **ChatGPT** | 92.6\% |
-| Vicuna vs. **ChatGPT** | 92 \% |
+<div align=center>
+<img src="assets/comparsion_english.png" width = "640" alt="comparsion_english" align=center />
+</div>
 
 
 
