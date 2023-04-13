@@ -1,6 +1,6 @@
 # LLM Zoo: democratizing ChatGPT
 
-⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models. [paper](assets/llmzoo.pdf)⚡
+⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models. [paper](assets/lllzoo.pdf)⚡
 
 <div align=center>
 <img src="assets/zoo.png" width = "640" alt="zoo" align=center />
