@@ -63,10 +63,10 @@
 | Alpaca | LLaMA | 7B | ❌ | ✅ | en | 52K | en | ❌ | ❌ | 03/13/23 |
 | Dolly | GPT-J | 6B | ✅ | ✅ | en | 52k | en | ❌ | ❌ | 03/24/23 |
 | BELLE | BLOOMZ | 7B/13B | ✅ | ✅ | ch | 1.5M | ch | ❌ | ❌ |
-| Guanaco| LLaMA | 7B | :heavy_check_mark: | :heavy_check_mark: | en/cn/ja/de | 534K | 4 | :x: | :x: | 03/26/23 |
-| Chinese-alpaca | LLaMA | 7/13B | :heavy_check_mark: | :heavy_check_mark: | en/ch | 2M/3M | en/ch | :x: | :x: | 03/28/23 |
-| LuoTuo | LLaMA | 7B | :heavy_check_mark: | :heavy_check_mark: | cn | 52k | cn | :x: | :x: | 03/31/23 |
-| Vicuna | LLaMA | 7/13B | :heavy_check_mark: | :x: | en | :x: | :x: | 70K | multi | 03/13/23 |
+| Guanaco| LLaMA | 7B | :✅ | :✅ | en/cn/ja/de | 534K | 4 | ❌ | ❌ | 03/26/23 |
+| Chinese-alpaca | LLaMA | 7/13B | :✅ | :✅ | en/ch | 2M/3M | en/ch | ❌ | ❌ | 03/28/23 |
+| LuoTuo | LLaMA | 7B | :✅ | :✅ | cn | 52k | cn | ❌ | ❌ | 03/31/23 |
+| Vicuna | LLaMA | 7/13B | :✅ | ❌ | en | ❌ | ❌ | 70K | multi | 03/13/23 |
 | Koala | LLaMA | 13B | ✅ | ✅ | en | 355K | en | 117K | en | 04/03/23 |
 | BAIZE | LLaMA | 7/13/30B | ✅ | ✅ | en | ❌ | ❌ | 111.5K | en | 04/04/23 |
 | **Phoenix** | BLOOMZ | 7B | ✅ | ✅ | multi |  | 40+ |  |  | 04/08/23 |
@@ -86,10 +86,12 @@ The key difference in our models is that we utilize two sets of data, namely **i
 > Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of
 > playing games overnight during high school and undergraduate time.
 
-| Model            | Backbone  | Data         | Link                                                                       |
-|------------------|-----------|--------------|----------------------------------------------------------------------------|
-| chimera-chat-7b  | LLaMA-7b  | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-7b-delta)  |
-| chimera-chat-13b | LLaMA-13b | Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-13b-delta) |
+| Model                 | Backbone  | Data                       | Link                                                                                         |
+|-----------------------|-----------|----------------------------|----------------------------------------------------------------------------------------------|
+| Chimera-chat-7b       | LLaMA-7b  | Conversation               | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-7b-delta)       |
+| Chimera-chat-13b      | LLaMA-13b | Conversation               | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-chat-13b-delta)      |
+| Chimera-inst-chat-7b  | LLaMA-7b  | Instruction + Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-inst-chat-7b-delta)  |
+| Chimera-inst-chat-13b | LLaMA-13b | Instruction + Conversation | [parameters (delta)](https://huggingface.co/FreedomIntelligence/chimera-inst-chat-13b-delta) |
 
 Due to LLaMA's license restrictions, we follow [FastChat](https://github.com/lm-sys/FastChat) to release our delta weights. To use Chimera, download the original [LLaMA weights](https://huggingface.co/docs/transformers/main/model_doc/llama) and run the script:
 
@@ -108,9 +110,10 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 > languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it
 > goes without saying this is also for the Chinese University of Hong Kong (CUHK).
 
-| Model           | Backbone      | Data         | Link                                                                      |
-|-----------------|---------------|--------------|---------------------------------------------------------------------------|
-| phoenix-chat-7b | BLOOMZ-7b1-mt | Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-chat-7b) |
+| Model                | Backbone      | Data         | Link                                                                          |
+|----------------------|---------------|--------------|-------------------------------------------------------------------------------|
+| Phoenix-chat-7b      | BLOOMZ-7b1-mt | Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-chat-7b)      |
+| Phoenix-inst-chat-7b | BLOOMZ-7b1-mt | Instruction + Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b) |
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
@@ -131,23 +134,24 @@ Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-m
 ## 🧐 Evaluation and Benchmark
 
 We provide a bilingual, multidimensional comparison across different open-source models with ours.
-See [here](llmzoo/eval/README.md) for detailed information regarding the evaluation metrics and criteria.
+
+[//]: # (See [here]&#40;llmzoo/eval/README.md&#41; for detailed information regarding the evaluation metrics and criteria.)
 
 ### in Chinese
 
 
 #### General evaluation
 
-The pair-wise comparison of `Phoenix-chat-7b` model with others.
+The pair-wise comparison of `Phoenix-inst-chat-7b` model with others.
 
-| Model | Ratio |
-|-------|-------|
-| Phoenix-chat-7b vs. **ChatGPT** | 85.2\% |
-| Phoenix-chat-7b vs. **Baidu-Wenxin** | 96.8\% |
-| Phoenix-chat-7b vs. **ChatGLM-6b** | 94.6\% |
-| **Phoenix-chat-7b** vs. Belle-7b-2m | 122.7\% |
-| **Phoenix-chat-7b** vs. Chinese-Alpaca-7b | 135.3\% |
-| **Phoenix-chat-7b** vs. Chinese-Alpaca-13b | 125.2\% |
+| Model                                      | Ratio |
+|--------------------------------------------|-------|
+| Phoenix-inst-chat-7b vs. **ChatGPT**       | 85.2\% |
+| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**       | 96.8\% |
+| Phoenix-inst-chat-7b vs. **ChatGLM-6b**         | 94.6\% |
+| **Phoenix-inst-chat-7b** vs. Belle-7b-2m        | 122.7\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b  | 135.3\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-13b | 125.2\% |
 
 It shows that Phoenix-chat-7b achieves 85.2\% performance of ChatGPT in Chinese. It slightly underperforms Baidu-Wenxin (96.8\%) and ChatGLM-6b (94.6 \%), both are not fully open-source;  ChatGLM-6b only provides model weights without training data and details. Although Phoenix is a multilingual LLM, it achieves SOTA performance among all open-source Chinese LLMs.
 
@@ -156,10 +160,13 @@ It shows that Phoenix-chat-7b achieves 85.2\% performance of ChatGPT in Chinese.
 ### in English
 
 #### General evaluation
+
+The pair-wise comparison of `Chimera-inst-chat-7b` model with others.
+
 | Model | Ratio |
 |-------|-------|
-| Chimera-chat-7b vs.  **ChatGPT**  | 85.2\% |
-| Chimera-chat-13b vs.  **ChatGPT** | 92.6\% |
+| Chimera-inst-chat-7b vs.  **ChatGPT**  | 85.2\% |
+| Chimera-inst-chat-13b vs.  **ChatGPT** | 92.6\% |
 | Vicuna vs. **ChatGPT** | 92 \% |
 
 
