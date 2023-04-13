@@ -36,7 +36,15 @@
 ```
 
 
-- Language-specific instructions are manually design by ourself + self-instruction
+- User-centered instructions
+```diff
++ (Role, Instruction, Input) seeds
+- ---(Step 1) Self Instruct--->
++ (Role, Instruction, Input) samples
+- ---(Step 2) generate output Instruct--->
++ (Role, Instruction, Input) ---> Output
+```
+
 
 
 > Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
