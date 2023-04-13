@@ -66,7 +66,7 @@
 | Guanaco | LLaMA | 7B | ✅ | ✅ | en,zh,ja,de | 534K, multi | ❌ | 03/26/23 |
 | Chinese-LLaMA-Alpaca | LLaMA | 7/13B | ✅ | ✅ | en/zh | 2M/3M, en/zh | ❌ | 03/28/23 |
 | LuoTuo | LLaMA | 7B | ✅ | ✅ | zh | 52K, zh | ❌  | 03/31/23 |
-| Vicuna | LLaMA | 7/13B | ✅ | ❌ | en | ❌  | 70K, multi | 03/13/23 |
+| Vicuna | LLaMA | 7/13B | ✅ | ✅  | en | ❌  | 70K, multi | 03/13/23 |
 | Koala | LLaMA | 13B | ✅ | ✅ | en | 355K, en | 117K, en | 04/03/23 |
 | BAIZE | LLaMA | 7/13/30B | ✅ | ✅ | en | ❌ |111.5K, en | 04/04/23 |
 | **Phoenix** | BLOOMZ | 7B | ✅ | ✅ | multi   | 40+,   | | 04/08/23 |
