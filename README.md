@@ -62,7 +62,7 @@
 | ChatGLM | GLM | 6B | ✅ | ❌ | en,zh |  |  |  |  | 03/16/23 |
 | Alpaca | LLaMA | 7B | ❌ | ✅ | en | 52K | en | ❌ | ❌ | 03/13/23 |
 | Dolly | GPT-J | 6B | ✅ | ✅ | en | 52K | en | ❌ | ❌ | 03/24/23 |
-| BELLE | BLOOMZ | 7B/13B | ✅ | ✅ | zh | 1.5M | zh | ❌ | ❌ |
+| BELLE | BLOOMZ | 7B | ✅ | ✅ | zh | 1.5M | zh | ❌ | ❌ |
 | Guanaco | LLaMA | 7B | ✅ | ✅ | en,zh,ja,de | 534K | 4 | ❌ | ❌ | 03/26/23 |
 | Chinese-LLaMA-Alpaca | LLaMA | 7/13B | ✅ | ✅ | en/zh | 2M/3M | en/zh | ❌ | ❌ | 03/28/23 |
 | LuoTuo | LLaMA | 7B | ✅ | ✅ | zh | 52K | zh | ❌ | ❌ | 03/31/23 |
