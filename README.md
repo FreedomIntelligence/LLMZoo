@@ -168,8 +168,9 @@ The pair-wise comparison of `Chimera-inst-chat-7b` model with others.
 
 | Model | Ratio |
 |-------|-------|
-| Chimera-inst-chat-7b vs.  **ChatGPT**  | 85.2\% |
-| Chimera-inst-chat-13b vs.  **ChatGPT** | 92.6\% |
+| Chimera-chat-7b vs.  **ChatGPT**  | 85.2\% |
+| Chimera-chat-13b vs.  **ChatGPT** | 92.6\% |
+| Chimera-inst-chat-13b vs.  **ChatGPT** | **96.6\%** |
 | Vicuna vs. **ChatGPT** | 92.0 \% |
 
 
