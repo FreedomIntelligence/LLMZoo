@@ -61,11 +61,11 @@
 | Wenxin | - | - | ❌ | ❌ | zh |  |  |  |  | 03/16/23 |
 | ChatGLM | GLM | 6B | ✅ | ❌ | en/zh |  |  |  |  | 03/16/23 |
 | Alpaca | LLaMA | 7B | ❌ | ✅ | en | 52K | en | ❌ | ❌ | 03/13/23 |
-| Dolly | GPT-J | 6B | ✅ | ✅ | en | 52k | en | ❌ | ❌ | 03/24/23 |
+| Dolly | GPT-J | 6B | ✅ | ✅ | en | 52K | en | ❌ | ❌ | 03/24/23 |
 | BELLE | BLOOMZ | 7B/13B | ✅ | ✅ | zh | 1.5M | zh | ❌ | ❌ |
 | Guanaco| LLaMA | 7B | ✅ | ✅ | en/zh/ja/de | 534K | 4 | ❌ | ❌ | 03/26/23 |
 | Chinese-alpaca | LLaMA | 7/13B | ✅ | ✅ | en/zh | 2M/3M | en/zh | ❌ | ❌ | 03/28/23 |
-| LuoTuo | LLaMA | 7B | ✅ | ✅ | cn | 52k | zh | ❌ | ❌ | 03/31/23 |
+| LuoTuo | LLaMA | 7B | ✅ | ✅ | cn | 52K | zh | ❌ | ❌ | 03/31/23 |
 | Vicuna | LLaMA | 7/13B | ✅ | ❌ | en | ❌ | ❌ | 70K | multi | 03/13/23 |
 | Koala | LLaMA | 13B | ✅ | ✅ | en | 355K | en | 117K | en | 04/03/23 |
 | BAIZE | LLaMA | 7/13/30B | ✅ | ✅ | en | ❌ | ❌ | 111.5K | en | 04/04/23 |
