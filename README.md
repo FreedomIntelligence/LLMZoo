@@ -59,13 +59,13 @@
 | --- | --- | --- | -- | --- | --- | --- | --- | --- | --- | --- |
 | ChatGPT | - | - | ❌ | ❌ | multi |  |  |  |  | 11/30/22 |
 | Wenxin | - | - | ❌ | ❌ | zh |  |  |  |  | 03/16/23 |
-| ChatGLM | GLM | 6B | ✅ | ❌ | en/zh |  |  |  |  | 03/16/23 |
+| ChatGLM | GLM | 6B | ✅ | ❌ | en,zh |  |  |  |  | 03/16/23 |
 | Alpaca | LLaMA | 7B | ❌ | ✅ | en | 52K | en | ❌ | ❌ | 03/13/23 |
 | Dolly | GPT-J | 6B | ✅ | ✅ | en | 52K | en | ❌ | ❌ | 03/24/23 |
 | BELLE | BLOOMZ | 7B/13B | ✅ | ✅ | zh | 1.5M | zh | ❌ | ❌ |
-| Guanaco| LLaMA | 7B | ✅ | ✅ | en/zh/ja/de | 534K | 4 | ❌ | ❌ | 03/26/23 |
-| Chinese-alpaca | LLaMA | 7/13B | ✅ | ✅ | en/zh | 2M/3M | en/zh | ❌ | ❌ | 03/28/23 |
-| LuoTuo | LLaMA | 7B | ✅ | ✅ | cn | 52K | zh | ❌ | ❌ | 03/31/23 |
+| Guanaco | LLaMA | 7B | ✅ | ✅ | en,zh,ja,de | 534K | 4 | ❌ | ❌ | 03/26/23 |
+| Chinese-LLaMA-Alpaca | LLaMA | 7/13B | ✅ | ✅ | en/zh | 2M/3M | en/zh | ❌ | ❌ | 03/28/23 |
+| LuoTuo | LLaMA | 7B | ✅ | ✅ | zh | 52K | zh | ❌ | ❌ | 03/31/23 |
 | Vicuna | LLaMA | 7/13B | ✅ | ❌ | en | ❌ | ❌ | 70K | multi | 03/13/23 |
 | Koala | LLaMA | 13B | ✅ | ✅ | en | 355K | en | 117K | en | 04/03/23 |
 | BAIZE | LLaMA | 7/13/30B | ✅ | ✅ | en | ❌ | ❌ | 111.5K | en | 04/04/23 |
@@ -73,8 +73,6 @@
 | **Latin Phoenix (Chimera)** | LLaMA | 7/13B | ✅ | ✅ | Latin |  | Latin|  |  | 04/08/23 |
 
 The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that *the **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
-
-
 
 ### Chimera (LLM mainly for Latin and Cyrillic languages)
 
@@ -117,10 +115,7 @@ of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordina
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
-> The philosophy to name: Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua
-> Tuo (华佗), who lived
-> around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in
-> public cloud servers in case of massive requests.
+> The philosophy to name: Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in public cloud servers in case of massive requests.
 
 See our models in https://www.huatuogpt.cn/ (API key required) .
 Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-models.md) 
@@ -167,7 +162,7 @@ The pair-wise comparison of `Chimera-inst-chat-7b` model with others.
 |-------|-------|
 | Chimera-inst-chat-7b vs.  **ChatGPT**  | 85.2\% |
 | Chimera-inst-chat-13b vs.  **ChatGPT** | 92.6\% |
-| Vicuna vs. **ChatGPT** | 92 \% |
+| Vicuna vs. **ChatGPT** | 92.0 \% |
 
 
 ## 🏭 Deployment
