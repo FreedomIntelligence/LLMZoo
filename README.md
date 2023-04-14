@@ -1,12 +1,11 @@
 # LLM Zoo: democratizing ChatGPT
-[Tech Report (in progress)](assets/lllzoo.pdf)
 
 <div align=center>
 <img src="assets/zoo.png" width = "640" alt="zoo" align=center />
 </div>
 
 
-⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡
+⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡ [[Tech Report]](assets/lllzoo.pdf)
 
 ## Latest News
 - [04/08/2023]: Release the Phoenix (for non-Latin languages) and Chimera (for Latin languages) models.
