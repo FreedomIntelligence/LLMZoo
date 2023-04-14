@@ -1,19 +1,21 @@
 # LLM Zoo: democratizing ChatGPT
 
-⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models. [paper](assets/lllzoo.pdf)⚡
+⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡
+
+[Tech Report (in progress)](assets/lllzoo.pdf)
 
 <div align=center>
 <img src="assets/zoo.png" width = "640" alt="zoo" align=center />
 </div>
 
+## Latest News
+- [04/08/2023]: Release the Phoenix (for non-Latin languages) and Chimera (for Latin languages) models.
+
 ## 🤔 Motivation
 
 - Break  "AI supremacy"  and democratize ChatGPT
 
-> "AI supremacy" is understood as a company's absolute leadership and monopoly position in an AI field, which may even
-> include exclusive capabilities beyond general artificial intelligence. This is unacceptable for AI community and may
-> even
-> lead to individual influence on the direction of the human future, thus bringing various hazards to human society.
+> "AI supremacy" is understood as a company's absolute leadership and monopoly position in an AI field, which may even include exclusive capabilities beyond general artificial intelligence. This is unacceptable for AI community and may even lead to individual influence on the direction of the human future, thus bringing various hazards to human society.
 
 - Make ChatGPT-like LLM accessible across countries and languages
 - Make AI open again. Every person, regardless of their skin color or place of birth, should have equal access to the
@@ -35,7 +37,6 @@
 + Output in Language B
 ```
 
-
 - User-centered instructions
 ```diff
 + (Role, Instruction, Input) seeds
@@ -45,13 +46,11 @@
 + (Role, Instruction, Input) ---> Output
 ```
 
-
-
 > Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
 
 ### Conversation data
 
-- User-generated ChatGPT conversations
+- User-shared conversations
 
 ```diff
 + ChatGPT conversations shared on the Internet
@@ -63,34 +62,38 @@
 
 ## 🐼 Models
 
-| Model | Backbone | \#paras | Open-source model | Open-source data | Claimed language | Post-training  (instruction)  | Post-training (conversation)  | Release date |
-| --- | --- | --- | -- | --- | --- | --- | --- | --- |
-| ChatGPT | - | - | ❌ | ❌ | multi |     |  | 11/30/22 |
-| Wenxin | - | - | ❌ | ❌ | zh |  |      | 03/16/23 |
-| ChatGLM | GLM | 6B | ✅ | ❌ | en,zh |  |   | 03/16/23 |
-| Alpaca | LLaMA | 7B | ❌ | ✅ | en | 52K, en |  ❌ | 03/13/23 |
-| Dolly | GPT-J | 6B | ✅ | ✅ | en | 52K, en |  ❌ | 03/24/23 |
-| BELLE | BLOOMZ | 7B | ✅ | ✅ | zh | 1.5M, zh |  ❌ | 03/26/23 |
-| Guanaco | LLaMA | 7B | ✅ | ✅ | en,zh,ja,de | 534K, multi | ❌ | 03/26/23 |
-| Chinese-LLaMA-Alpaca | LLaMA | 7/13B | ✅ | ✅ | en/zh | 2M/3M, en/zh | ❌ | 03/28/23 |
-| LuoTuo | LLaMA | 7B | ✅ | ✅ | zh | 52K, zh | ❌  | 03/31/23 |
-| Vicuna | LLaMA | 7/13B | ✅ | ✅  | en | ❌  | 70K, multi | 03/13/23 |
-| Koala | LLaMA | 13B | ✅ | ✅ | en | 355K, en | 117K, en | 04/03/23 |
-| BAIZE | LLaMA | 7/13/30B | ✅ | ✅ | en | ❌ |111.5K, en | 04/04/23 |
-| **Phoenix** | BLOOMZ | 7B | ✅ | ✅ | multi   | 40+,   | | 04/08/23 |
-| **Latin Phoenix (Chimera)** | LLaMA | 7/13B | ✅ | ✅ | Latin   | Latin|    | 04/08/23 |
+| Model                         | Backbone |  #Params | Open-source model | Open-source data | Claimed language | Post-training (instruction) | Post-training (conversation) | Release date |
+|-------------------------------|----------|---------:|------------------:|-----------------:|-----------------:|----------------------------:|-----------------------------:|-------------:|
+| ChatGPT                       | -        |        - |                 ❌ |                ❌ |            multi |                             |                              |     11/30/22 |
+| Wenxin                        | -        |        - |                 ❌ |                ❌ |               zh |                             |                              |     03/16/23 |
+| ChatGLM                       | GLM      |       6B |                 ✅ |                ❌ |           en, zh |                             |                              |     03/16/23 |
+| Alpaca                        | LLaMA    |       7B |                 ❌ |                ✅ |               en |                     52K, en |                            ❌ |     03/13/23 |
+| Dolly                         | GPT-J    |       6B |                 ✅ |                ✅ |               en |                     52K, en |                            ❌ |     03/24/23 |
+| BELLE                         | BLOOMZ   |       7B |                 ✅ |                ✅ |               zh |                    1.5M, zh |                            ❌ |     03/26/23 |
+| Guanaco                       | LLaMA    |       7B |                 ✅ |                ✅ |   en, zh, ja, de |                 534K, multi |                            ❌ |     03/26/23 |
+| Chinese-LLaMA-Alpaca          | LLaMA    |    7/13B |                 ✅ |                ✅ |           en, zh |                2M/3M, en/zh |                            ❌ |     03/28/23 |
+| LuoTuo                        | LLaMA    |       7B |                 ✅ |                ✅ |               zh |                     52K, zh |                            ❌ |     03/31/23 |
+| Vicuna                        | LLaMA    |    7/13B |                 ✅ |                ✅ |               en |                           ❌ |                   70K, multi |     03/13/23 |
+| Koala                         | LLaMA    |      13B |                 ✅ |                ✅ |               en |                    355K, en |                     117K, en |     04/03/23 |
+| BAIZE                         | LLaMA    | 7/13/30B |                 ✅ |                ✅ |               en |                           ❌ |                   111.5K, en |     04/04/23 |
+| Phoenix (Ours)                | BLOOMZ   |       7B |                 ✅ |                ✅ |            multi |                         40+ |                          40+ |     04/08/23 |
+| Latin Phoenix: Chimera (Ours) | LLaMA    |    7/13B |                 ✅ |                ✅ |    multi (Latin) |                       Latin |                        Latin |     04/08/23 |
 
 The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that *the **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
 
+### Phoenix (LLM across Languages)
+
+> The first model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird) languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it goes without saying this is also for the Chinese University of Hong Kong (CUHK).
+
+| Model                | Backbone      | Data         | Link                                                                          |
+|----------------------|---------------|--------------|-------------------------------------------------------------------------------|
+| Phoenix-chat-7b      | BLOOMZ-7b1-mt | Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-chat-7b)      |
+| Phoenix-inst-chat-7b | BLOOMZ-7b1-mt | Instruction + Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b) |
+
+
 ### Chimera (LLM mainly for Latin and Cyrillic languages)
 
-> The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLMs, as LLAMA,
-> Guanaco, Vicuna, and
-> Alpaca have already been used, and there are no more members in the camel family. Therefore, we find a similar hybrid
-> creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia
-> and Asia Minor animal parts.
-> Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of
-> playing games overnight during high school and undergraduate time.
+> The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLMs, as LLAMA, Guanaco, Vicuna, and Alpaca have already been used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts. Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of playing games overnight during high school and undergraduate time.
 
 | Model                 | Backbone  | Data                       | Link                                                                                         |
 |-----------------------|-----------|----------------------------|----------------------------------------------------------------------------------------------|
@@ -107,19 +110,6 @@ python tools/apply_delta.py \
  --target /output/path/to/chimera-chat-7b \
  --delta FreedomIntelligence/chimera-chat-7b-delta
 ```
-
-### Phoenix (LLM across Languages)
-
-> The second model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king
-of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak
-> different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird)
-> languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it
-> goes without saying this is also for the Chinese University of Hong Kong (CUHK).
-
-| Model                | Backbone      | Data         | Link                                                                          |
-|----------------------|---------------|--------------|-------------------------------------------------------------------------------|
-| Phoenix-chat-7b      | BLOOMZ-7b1-mt | Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-chat-7b)      |
-| Phoenix-inst-chat-7b | BLOOMZ-7b1-mt | Instruction + Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b) |
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
@@ -138,40 +128,30 @@ Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-m
 
 We provide a bilingual, multidimensional comparison across different open-source models with ours.
 
-[//]: # (See [here]&#40;llmzoo/eval/README.md&#41; for detailed information regarding the evaluation metrics and criteria.)
-
-### in Chinese
-
-
-#### General evaluation
+### Chinese
 
 The pair-wise comparison of `Phoenix-inst-chat-7b` model with others.
 
-| Model                                      | Ratio |
-|--------------------------------------------|-------|
-| Phoenix-inst-chat-7b vs. **ChatGPT**       | 85.2\% |
-| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**       | 96.8\% |
-| Phoenix-inst-chat-7b vs. **ChatGLM-6b**         | 94.6\% |
-| **Phoenix-inst-chat-7b** vs. Belle-7b-2m        | 122.7\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b  | 135.3\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-13b | 125.2\% |
+| Model                                                 | Ratio   |
+|-------------------------------------------------------|---------|
+| Phoenix-inst-chat-7b vs. **ChatGPT**                  | 85.2\%  |
+| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**             | 96.8\%  |
+| Phoenix-inst-chat-7b vs. **ChatGLM-6b**               | 94.6\%  |
+| **Phoenix-inst-chat-7b** vs. Belle-7b-2m              | 122.7\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-LLaMA-Alpaca-7b  | 135.3\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-LLaMA-Alpaca-13b | 125.2\% |
 
 It shows that Phoenix-chat-7b achieves 85.2\% performance of ChatGPT in Chinese. It slightly underperforms Baidu-Wenxin (96.8\%) and ChatGLM-6b (94.6 \%), both are not fully open-source;  ChatGLM-6b only provides model weights without training data and details. Although Phoenix is a multilingual LLM, it achieves SOTA performance among all open-source Chinese LLMs.
 
-
-
-### in English
-
-#### General evaluation
+### English
 
 The pair-wise comparison of `Chimera-inst-chat-7b` model with others.
 
-| Model | Ratio |
-|-------|-------|
-| Chimera-chat-7b vs.  **ChatGPT**  | 85.2\% |
-| Chimera-chat-13b vs.  **ChatGPT** | 92.6\% |
+| Model                                  | Ratio      |
+|----------------------------------------|------------|
+| Chimera-chat-7b vs.  **ChatGPT**       | 85.2\%     |
+| Chimera-chat-13b vs.  **ChatGPT**      | 92.6\%     |
 | Chimera-inst-chat-13b vs.  **ChatGPT** | **96.6\%** |
-| Vicuna vs. **ChatGPT** | 92.0 \% |
 
 
 ## 🏭 Deployment
