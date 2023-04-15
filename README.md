@@ -144,7 +144,7 @@ We provide a bilingual, multidimensional comparison across different open-source
 
 * Human Evaluation:
 
-|                                          | Model 1 | Tie | Model 2 |
+|                                          | win | tie | lose |
 |------------------------------------------|:-------:|:---:|:-------:|
 | Phoenix vs. **ChatGPT**                  |    12   |  35 |    53   |
 | Phoenix vs. **Baidu-Wenxin**             |    29   |  25 |    46   |
