@@ -5,7 +5,7 @@
 </div>
 
 
-⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡ [[Tech Report]](assets/lllzoo.pdf)
+⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡ [[Tech Report]](assets/llmzoo.pdf)
 
 ## ✨ Latest News
 - [04/08/2023]: Release the Phoenix (for all languages) and Chimera (for Latin languages) models.
