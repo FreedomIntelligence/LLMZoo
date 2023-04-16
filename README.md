@@ -105,9 +105,9 @@ Due to LLaMA's license restrictions, we follow [FastChat](https://github.com/lm-
 
 ```bash
 python tools/apply_delta.py \
- --base /path/to/llama-7b \
- --target /output/path/to/chimera-chat-7b \
- --delta FreedomIntelligence/chimera-chat-7b-delta
+ --base /path/to/llama-13b \
+ --target /output/path/to/chimera-inst-chat-13b \
+ --delta FreedomIntelligence/chimera-inst-chat-13b-delta
 ```
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
