@@ -175,9 +175,15 @@ pip install -r requirements.txt
 
 ### CLI Inference
 
-```angular2html
+```bash
 python -m llmzoo.deploy.cli --model-name /path/to/weights/
 ```
+For example, for `phoenix`, run
+```bash
+python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b
+```
+and it will download the model from huggingface automatically. For `Chimera`, please follow [this](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
+
 
 ## 🤖 Limitations
 
