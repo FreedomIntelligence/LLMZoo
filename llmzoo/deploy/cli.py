@@ -60,11 +60,8 @@ def generate_stream(tokenizer, model, params, device, context_len=2048, stream_i
             logits = out.logits
             past_key_values = out.past_key_values
         else:
-            attention_mask = torch.ones(1, len(output_ids), device=device)
             out = model(input_ids=torch.as_tensor([[token]], device=device),
-                        use_cache=True,
-                        attention_mask=attention_mask,
-                        past_key_values=past_key_values)
+                        use_cache=True, past_key_values=past_key_values)
             logits = out.logits
             past_key_values = out.past_key_values
 
@@ -107,7 +104,7 @@ def main(args):
     conv = conv_templates[args.conv_template].copy()
     while True:
         try:
-            inp = input(f"{conv.roles[0]}: \n")
+            inp = input(f"{conv.roles[0]}: ")
             while inp == "clear":
                 conv = conv_templates[args.conv_template].copy()
                 inp = input(f"{conv.roles[0]}: \n")
@@ -129,7 +126,7 @@ def main(args):
             "stop": conv.sep
         }
 
-        print(f"{conv.roles[1]}: \n", end="", flush=True)
+        print(f"{conv.roles[1]}: ", end="", flush=True)
         pre = 0
         for outputs in generate_stream(tokenizer, model, params, args.device):
             outputs = outputs.strip()
