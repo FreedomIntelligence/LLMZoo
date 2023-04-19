@@ -112,7 +112,7 @@ python tools/apply_delta.py \
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
-> The philosophy to name: Its Chinese name is HuatuoGPT or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in public cloud servers in case of massive requests.
+> The philosophy to name: Its Chinese name is [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in public cloud servers in case of massive requests. 
 
 See our models in https://www.huatuogpt.cn/ (API key required) .
 Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-models.md) 
