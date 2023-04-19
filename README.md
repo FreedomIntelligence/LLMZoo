@@ -47,6 +47,8 @@
 
 > Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
 
+> [GPT-API-Accelerate Tool](https://github.com/FreedomIntelligence/GPT-API-Accelerate) may help build ChatGPT-generated data more quickly.
+
 ### Conversation data
 
 - User-shared conversations
