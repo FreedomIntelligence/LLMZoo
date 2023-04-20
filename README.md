@@ -68,7 +68,7 @@
 | ChatGPT                       | -        |        - |                 ❌ |                ❌ |            multi |                             |                              |     11/30/22 |
 | Wenxin                        | -        |        - |                 ❌ |                ❌ |               zh |                             |                              |     03/16/23 |
 | ChatGLM                       | GLM      |       6B |                 ✅ |                ❌ |           en, zh |                             |                              |     03/16/23 |
-| Alpaca                        | LLaMA    |       7B |                 ❌ |                ✅ |               en |                     52K, en |                            ❌ |     03/13/23 |
+| Alpaca                        | LLaMA    |       7B |                 ✅ |                ✅ |               en |                     52K, en |                            ❌ |     03/13/23 |
 | Dolly                         | GPT-J    |       6B |                 ✅ |                ✅ |               en |                     52K, en |                            ❌ |     03/24/23 |
 | BELLE                         | BLOOMZ   |       7B |                 ✅ |                ✅ |               zh |                    1.5M, zh |                            ❌ |     03/26/23 |
 | Guanaco                       | LLaMA    |       7B |                 ✅ |                ✅ |   en, zh, ja, de |                 534K, multi |                            ❌ |     03/26/23 |
