@@ -133,26 +133,26 @@ We provide a bilingual, multidimensional comparison across different open-source
 
 * Automatic Evaluation Using GPT-4:
 
-| Model                                                 | Ratio   |
-|-------------------------------------------------------|---------|
-| Phoenix-inst-chat-7b vs. **ChatGPT**                  | 85.2\%  |
-| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**             | 96.8\%  |
-| Phoenix-inst-chat-7b vs. **ChatGLM-6b**               | 94.6\%  |
-| **Phoenix-inst-chat-7b** vs. Belle-7b-2m              | 122.7\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-LLaMA-Alpaca-7b  | 135.3\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-LLaMA-Alpaca-13b | 125.2\% |
+| Model                                            | Ratio   |
+|--------------------------------------------------|---------|
+| Phoenix-inst-chat-7b vs. **ChatGPT**             | 85.2\%  |
+| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**        | 96.8\%  |
+| Phoenix-inst-chat-7b vs. **ChatGLM-6b**          | 94.6\%  |
+| **Phoenix-inst-chat-7b** vs. Belle-7b-2m         | 122.7\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b   | 135.3\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-13b  | 125.2\% |
 
 **Observation**: It shows that Phoenix-chat-7b achieves 85.2\% performance of ChatGPT in Chinese. It slightly underperforms Baidu-Wenxin (96.8\%) and ChatGLM-6b (94.6 \%), both are not fully open-source;  ChatGLM-6b only provides model weights without training data and details. Although Phoenix is a multilingual LLM, it achieves SOTA performance among all open-source Chinese LLMs.
 
 * Human Evaluation:
 
-|                                          | win | tie | lose |
-|------------------------------------------|:-------:|:---:|:-------:|
-| Phoenix vs. **ChatGPT**                  |    12   |  35 |    53   |
-| Phoenix vs. **Baidu-Wenxin**             |    29   |  25 |    46   |
-| Phoenix vs. **ChatGLM-6b**               |    36   |  11 |    53   |
-| **Phoenix** vs. BELLE-7b-2m              |    55   |  31 |    14   |
-| **Phoenix** vs. Chinese-LLaMA-Alpaca-13b |    56   |  31 |    13   |
+|                                      | win | tie | lose  |
+|--------------------------------------|:---:|:---:|:-----:|
+| Phoenix vs. **ChatGPT**              | 12  |  35 |  53   |
+| Phoenix vs. **Baidu-Wenxin**         | 29  |  25 |  46   |
+| Phoenix vs. **ChatGLM-6b**           | 36  |  11 |  53   |
+| **Phoenix** vs. BELLE-7b-2m          | 55  |  31 |  14   |
+| **Phoenix** vs. Chinese-Alpaca-13b   | 56  |  31 |  13   |
 
 **Observation**: It shows that the human evaluation results show the same trend as the automatic evaluation results.
 
