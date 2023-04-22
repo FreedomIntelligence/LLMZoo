@@ -233,6 +233,14 @@ We are aware that our works are inspired by the following works, including but n
 Without these, nothing could happen in this repository.
 
 ## Citation
+```angular2
+@article{phoenix-2023,
+  title={Phoenix: Democratizing ChatGPT across Languages},
+  author={Zhihong Chen and Feng Jiang and Junying Chen and Tiannan Wang and Fei Yu and Guiming Chen and Hongbo Zhang and Juhao Liang and Chen Zhang and Zhiyi Zhang and Jianquan Li and Xiang Wan and Benyou Wang and Haizhou Li},
+  journal={arXiv preprint arXiv:2304.10453},
+  year={2023}
+}
+```
 
 ```angular2
 @misc{llm-zoo-2023,
