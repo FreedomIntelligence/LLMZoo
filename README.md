@@ -10,7 +10,6 @@
 - [04/08/2023]: Release the Phoenix (for all languages) and Chimera (for Latin languages) models.
 
 ## 🤔 Motivation
-
 - Break  "AI supremacy"  and democratize ChatGPT
 
 > "AI supremacy" is understood as a company's absolute leadership and monopoly position in an AI field, which may even include exclusive capabilities beyond general artificial intelligence. This is unacceptable for AI community and may even lead to individual influence on the direction of the human future, thus bringing various hazards to human society.
@@ -22,7 +21,6 @@
   history, should also be made available to all.
 
 ## 🎬 Get started
-
 ### Install
 
 Run the following command to install the required packages:
@@ -43,7 +41,6 @@ python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7
 and it will download the model from Hugging Face automatically. For `Chimera`, please follow this [instruction](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
 
 ## 📚 Data
-
 ### Overview
 We used the following two types of data for training `Phoenix` and `Chimera`:
 
@@ -89,7 +86,6 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 
 
 ## 🐼 Models
-
 | Model                         | Backbone |  #Params | Open-source model | Open-source data | Claimed language | Post-training (instruction) | Post-training (conversation) | Release date |
 |-------------------------------|----------|---------:|------------------:|-----------------:|-----------------:|----------------------------:|-----------------------------:|-------------:|
 | ChatGPT                       | -        |        - |                 ❌ |                ❌ |            multi |                             |                              |     11/30/22 |
@@ -107,7 +103,7 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 | Phoenix (Ours)                | BLOOMZ   |       7B |                 ✅ |                ✅ |            multi |                         40+ |                          40+ |     04/08/23 |
 | Latin Phoenix: Chimera (Ours) | LLaMA    |    7/13B |                 ✅ |                ✅ |    multi (Latin) |                       Latin |                        Latin |     04/08/23 |
 
-<details><summary><b>The key difference between different models and ours.</b></summary>
+<details><summary><b>The key difference between existing models and ours.</b></summary>
 
 > The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that *the **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
 </details>
@@ -156,11 +152,15 @@ python tools/apply_delta.py \
 Check our models in [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or try our [demo](https://www.huatuogpt.cn/) (API key required).
 Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-models.md).
 
+<details><summary><b>More models in the future</b></summary>
+
 ### Legal GPT (coming soon)
 
 ### Vision-Language Models (coming soon)
 
 ### Retrieval-augmented Models (coming soon)
+
+</details>
 
 ## 🧐 Evaluation and Benchmark
 
@@ -213,7 +213,7 @@ those of ChatGPT/GPT4, which include:
   can lead to nonsensical or inappropriate responses.
 
 - Limited knowledge domain: our models' knowledge is based on the data it was trained on, and it may not have the
-  ability to provide accurate or relevant responses outside of that domain.
+  ability to provide accurate or relevant responses outside that domain.
 
 - Biases: our models may have biases that reflect the biases in the data it was trained on, which can result in
   unintended consequences or unfair treatment.
