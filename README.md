@@ -24,7 +24,7 @@
 
 ## 📚 Data
 
-### Illustration
+### Overview
 We used the following two types of data for training `Phoenix` and `Chimera`:
 
 <details><summary><b>Instruction data</b></summary>
@@ -64,7 +64,7 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 ```
 </details>
 
-### Download
+### Data Download
 - [phoenix-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1): The data used for training Phoenix and Chimera.
 
 
