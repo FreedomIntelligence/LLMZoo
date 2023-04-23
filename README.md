@@ -25,8 +25,10 @@
 ## 📚 Data
 
 ### Illustration
+We used the following two types of data for training `Phoenix` and `Chimera`:
 
-#### Instruction data
+<details><summary><b>Instruction data</b></summary>
+
 - Multilingual instructions (language-agnostic instructions with post-translation)
 
 ```diff
@@ -49,8 +51,9 @@
 > Check [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo) for the collection of instruction datasets.
 
 > Check [GPT-API-Accelerate Tool](https://github.com/FreedomIntelligence/GPT-API-Accelerate) for faster data generation using ChatGPT.
+</details>
 
-#### Conversation data
+<details><summary><b>Conversation data</b></summary>
 
 - User-shared conversations
 
@@ -59,6 +62,7 @@
 - ---(Step 1) Crawl--->
 + Multi-round conversation data
 ```
+</details>
 
 ### Download
 - [phoenix-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1): The data used for training Phoenix and Chimera.
