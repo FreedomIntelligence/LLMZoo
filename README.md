@@ -184,7 +184,7 @@ For example, for `phoenix`, run
 ```bash
 python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b
 ```
-and it will download the model from huggingface automatically. For `Chimera`, please follow [this](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
+and it will download the model from Hugging Face automatically. For `Chimera`, please follow [this](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
 
 
 ## 🤖 Limitations
