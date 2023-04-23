@@ -4,7 +4,6 @@
 <img src="assets/zoo.png" width = "640" alt="zoo" align=center />
 </div>
 
-
 ⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡ [[Tech Report]](assets/llmzoo.pdf)
 
 ## ✨ Latest News
@@ -64,7 +63,7 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 ```
 </details>
 
-### Data Download
+### Download
 - [phoenix-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1): The data used for training Phoenix and Chimera.
 
 
@@ -87,7 +86,10 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 | Phoenix (Ours)                | BLOOMZ   |       7B |                 ✅ |                ✅ |            multi |                         40+ |                          40+ |     04/08/23 |
 | Latin Phoenix: Chimera (Ours) | LLaMA    |    7/13B |                 ✅ |                ✅ |    multi (Latin) |                       Latin |                        Latin |     04/08/23 |
 
-The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that *the **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
+<details><summary><b>The key difference between different models and ours.</b></summary>
+
+> The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that *the **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
+</details>
 
 ### Phoenix (LLM across Languages)
 <details><summary><b>The philosophy to name</b></summary>
