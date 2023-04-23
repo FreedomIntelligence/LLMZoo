@@ -87,9 +87,9 @@ The key difference in our models is that we utilize two sets of data, namely **i
 
 ### Phoenix (LLM across Languages)
 <details><summary><b>The philosophy to name</b></summary>
-<p>
+
 > The first model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird) languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it goes without saying this is also for the Chinese University of Hong Kong (CUHK).
-</p>
+
 </details>
 
 | Model                | Backbone      | Data         | Link                                                                          |
@@ -100,9 +100,8 @@ The key difference in our models is that we utilize two sets of data, namely **i
 
 ### Chimera (LLM mainly for Latin and Cyrillic languages)
 <details><summary><b>The philosophy to name</b></summary>
-<p>
+
 > The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLMs, as LLAMA, Guanaco, Vicuna, and Alpaca have already been used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts. Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of playing games overnight during high school and undergraduate time.
-</p>
 </details>
 
 | Model                 | Backbone  | Data                       | Link                                                                                         |
@@ -123,9 +122,8 @@ python tools/apply_delta.py \
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 <details><summary><b>The philosophy to name</b></summary>
-<p>
+
 > The philosophy to name: Its Chinese name is [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to deploy it in public cloud servers in case of massive requests.
-</p>
 </details>
 
 Check our models in [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or try our [demo](https://www.huatuogpt.cn/) (API key required).
