@@ -253,6 +253,10 @@ Without these, nothing could happen in this repository.
 }
 ```
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=FreedomIntelligence/LLMZoo&type=Date)](https://star-history.com/#FreedomIntelligence/LLMZoo&Date)
+
 We are from the School of Data Science, the Chinese University of Hong Kong, Shenzhen (CUHKSZ) and the Shenzhen Rsearch
 Institute of Big Data (SRIBD).
 
