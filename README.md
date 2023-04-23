@@ -24,9 +24,10 @@
 
 ## 📚 Data
 
-### Instruction data
+### Illustration
 
-- Multilingual instructions (language-agostic instructions with post-translation)
+#### Instruction data
+- Multilingual instructions (language-agnostic instructions with post-translation)
 
 ```diff
 + Self-Instructed / Translated (Instruction, Input) in Language A
@@ -45,11 +46,11 @@
 + (Role, Instruction, Input) ---> Output
 ```
 
-> Check open intruction dataset in [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo).
+> Check [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo) for the collection of instruction datasets.
 
-> [GPT-API-Accelerate Tool](https://github.com/FreedomIntelligence/GPT-API-Accelerate) may help build ChatGPT-generated data more quickly.
+> Check [GPT-API-Accelerate Tool](https://github.com/FreedomIntelligence/GPT-API-Accelerate) for faster data generation using ChatGPT.
 
-### Conversation data
+#### Conversation data
 
 - User-shared conversations
 
@@ -59,7 +60,9 @@
 + Multi-round conversation data
 ```
 
-> Check open User-chatGPT conversation data in [OpenChatGPT](https://github.com/FreedomIntelligence/OpenChatGPT).
+### Download
+- [phoenix-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1): The data used for training Phoenix and Chimera.
+
 
 ## 🐼 Models
 
@@ -83,8 +86,9 @@
 The key difference in our models is that we utilize two sets of data, namely **instructions** and **conversations**, which were previously only used by Alpaca and Vicuna respectively. We believe that incorporating both types of data is essential for a recipe  to achieve a proficient language model. The rationale  is that *the **instruction** data helps to tame language  models to adhere to human instructions and fulfill their information requirements*, while *the **conversation** data facilitates the development of conversational skills in the model*. Together, these two types of data complement each other to create a more well-rounded language model.
 
 ### Phoenix (LLM across Languages)
-
-> The first model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird) languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it goes without saying this is also for the Chinese University of Hong Kong (CUHK).
+<details><summary><b>The philosophy to name</b></summary>
+The first model is named **Phoenix**. In Chinese culture, the Phoenix is commonly regarded as a symbol of *the king of birds*; as the saying goes "百鸟朝凤", indicating its ability to coordinate with all birds, even if they speak different languages. We refer to Phoenix as the one capable of understanding and speaking hundreds of (bird) languages. More importantly, **Phoenix** is the totem of "the Chinese University of Hong Kong, Shenzhen" (CUHKSZ); it goes without saying this is also for the Chinese University of Hong Kong (CUHK).
+</details>
 
 | Model                | Backbone      | Data         | Link                                                                          |
 |----------------------|---------------|--------------|-------------------------------------------------------------------------------|
@@ -93,8 +97,9 @@ The key difference in our models is that we utilize two sets of data, namely **i
 
 
 ### Chimera (LLM mainly for Latin and Cyrillic languages)
-
+<details><summary><b>The philosophy to name</b></summary>
 > The philosophy to name: The biggest barrier to LLM is that we do not have enough candidate names for LLMs, as LLAMA, Guanaco, Vicuna, and Alpaca have already been used, and there are no more members in the camel family. Therefore, we find a similar hybrid creature in Greek mythology, [Chimera](https://en.wikipedia.org/wiki/Chimera_(mythology)), composed of different Lycia and Asia Minor animal parts. Coincidentally, it is a hero/role in DOTA (and also Warcraft III). It could therefore be used to memorize a period of playing games overnight during high school and undergraduate time.
+</details>
 
 | Model                 | Backbone  | Data                       | Link                                                                                         |
 |-----------------------|-----------|----------------------------|----------------------------------------------------------------------------------------------|
@@ -114,10 +119,12 @@ python tools/apply_delta.py \
 
 ### CAMEL (Chinese And Medically Enhanced Langauge models)
 
-> The philosophy to name: Its Chinese name is [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in public cloud servers in case of massive requests. 
+<details><summary><b>The philosophy to name</b></summary>
+The philosophy to name: Its Chinese name is [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to delopy it in public cloud servers in case of massive requests. 
+</details>
 
-See our models in https://www.huatuogpt.cn/ (API key required) .
-Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-models.md) 
+See our models in https://www.huatuogpt.cn/ (API key required).
+Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-models.md).
 
 ### Legal GPT (coming soon)
 
@@ -158,6 +165,8 @@ We provide a bilingual, multidimensional comparison across different open-source
 
 ### English
 
+* Automatic Evaluation Using GPT-4:
+
 | Model                                  | Ratio      |
 |----------------------------------------|------------|
 | Chimera-chat-7b vs.  **ChatGPT**       | 85.2\%     |
@@ -180,7 +189,7 @@ pip install -r requirements.txt
 ```bash
 python -m llmzoo.deploy.cli --model-name /path/to/weights/
 ```
-For example, for `phoenix`, run
+For example, for `Phoenix`, run
 ```bash
 python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b
 ```
