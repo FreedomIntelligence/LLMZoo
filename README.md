@@ -21,6 +21,27 @@
   and vaccines to developing countries. Similarly, ChatGPT, one of the greatest technological advancements in modern
   history, should also be made available to all.
 
+## 🎬 Get started
+
+### Install
+
+Run the following command to install the required packages:
+
+```angular2html
+pip install -r requirements.txt
+```
+
+### CLI Inference
+
+```bash
+python -m llmzoo.deploy.cli --model-name /path/to/weights/
+```
+For example, for `Phoenix`, run
+```bash
+python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b
+```
+and it will download the model from Hugging Face automatically. For `Chimera`, please follow this [instruction](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
+
 ## 📚 Data
 
 ### Overview
@@ -181,29 +202,6 @@ We provide a bilingual, multidimensional comparison across different open-source
 | Chimera-chat-7b vs.  **ChatGPT**       | 85.2\%     |
 | Chimera-chat-13b vs.  **ChatGPT**      | 92.6\%     |
 | Chimera-inst-chat-13b vs.  **ChatGPT** | **96.6\%** |
-
-
-## 🏭 Deployment
-
-### Install
-
-Run the following command to install the required packages:
-
-```angular2html
-pip install -r requirements.txt
-```
-
-### CLI Inference
-
-```bash
-python -m llmzoo.deploy.cli --model-name /path/to/weights/
-```
-For example, for `Phoenix`, run
-```bash
-python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b
-```
-and it will download the model from Hugging Face automatically. For `Chimera`, please follow [this](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
-
 
 ## 🤖 Limitations
 
