@@ -89,6 +89,7 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 
 
 ## 🐼 Models
+### Overview of existing models
 | Model                         | Backbone |  #Params | Open-source model | Open-source data | Claimed language | Post-training (instruction) | Post-training (conversation) | Release date |
 |-------------------------------|----------|---------:|------------------:|-----------------:|-----------------:|----------------------------:|-----------------------------:|-------------:|
 | ChatGPT                       | -        |        - |                 ❌ |                ❌ |            multi |                             |                              |     11/30/22 |
