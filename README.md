@@ -216,7 +216,7 @@ python -m llmzoo.deploy.webapp.controller
 
 ### Launch a model worker
 ```angular2html
-python -m llmzoo.deploy.webapp.model_worker --model-path /path/to/vicuna/weights
+python -m llmzoo.deploy.webapp.model_worker --model-path /path/to/weights/
 ```
 
 ### Launch a gradio web server
