@@ -180,7 +180,7 @@ We provide a bilingual, multidimensional comparison across different open-source
 | Phoenix-inst-chat-7b vs. **Baidu-Wenxin**       | 96.8\%  |
 | Phoenix-inst-chat-7b vs. **ChatGLM-6b**         | 94.6\%  |
 | **Phoenix-inst-chat-7b** vs. MOSS-moon-003-sft  | 109.7\% |
-| **Phoenix-inst-chat-7b** vs. Belle-7b-2m        | 122.7\% |
+| **Phoenix-inst-chat-7b** vs. BELLE-7b-2m        | 122.7\% |
 | **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b  | 135.3\% |
 | **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-13b | 125.2\% |
 
