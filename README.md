@@ -174,15 +174,15 @@ We provide a bilingual, multidimensional comparison across different open-source
 
 * Automatic Evaluation Using GPT-4:
 
-| Model                                            | Ratio   |
-|--------------------------------------------------|---------|
-| Phoenix-inst-chat-7b vs. **ChatGPT**             | 85.2\%  |
-| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**        | 96.8\%  |
-| Phoenix-inst-chat-7b vs. **ChatGLM-6b**          | 94.6\%  |
-| **Phoenix-inst-chat-7b** vs. moss-moon-003-sft   | 109.7\% |
-| **Phoenix-inst-chat-7b** vs. Belle-7b-2m         | 122.7\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b   | 135.3\% |
-| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-13b  | 125.2\% |
+| Model                                           | Ratio   |
+|-------------------------------------------------|---------|
+| Phoenix-inst-chat-7b vs. **ChatGPT**            | 85.2\%  |
+| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**       | 96.8\%  |
+| Phoenix-inst-chat-7b vs. **ChatGLM-6b**         | 94.6\%  |
+| **Phoenix-inst-chat-7b** vs. MOSS-moon-003-sft  | 109.7\% |
+| **Phoenix-inst-chat-7b** vs. Belle-7b-2m        | 122.7\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b  | 135.3\% |
+| **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-13b | 125.2\% |
 
 **Observation**: It shows that Phoenix-chat-7b achieves 85.2\% performance of ChatGPT in Chinese. It slightly underperforms Baidu-Wenxin (96.8\%) and ChatGLM-6b (94.6 \%), both are not fully open-source;  ChatGLM-6b only provides model weights without training data and details. Although Phoenix is a multilingual LLM, it achieves SOTA performance among all open-source Chinese LLMs.
 
