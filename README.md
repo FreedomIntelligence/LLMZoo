@@ -40,6 +40,9 @@ python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7
 ```
 and it will download the model from Hugging Face automatically. For `Chimera`, please follow this [instruction](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
 
+> Check this [instruction]() for deploying a web application.
+
+
 ## 📚 Data
 ### Overview
 We used the following two types of data for training `Phoenix` and `Chimera`:
@@ -202,6 +205,25 @@ We provide a bilingual, multidimensional comparison across different open-source
 | Chimera-chat-7b vs.  **ChatGPT**       | 85.2\%     |
 | Chimera-chat-13b vs.  **ChatGPT**      | 92.6\%     |
 | Chimera-inst-chat-13b vs.  **ChatGPT** | **96.6\%** |
+
+
+## 🏭 Deployment
+
+### Launch a controller
+```angular2html
+python -m llmzoo.deploy.webapp.controller
+```
+
+### Launch a model worker
+```angular2html
+python -m llmzoo.deploy.webapp.model_worker --model-path /path/to/vicuna/weights
+```
+
+### Launch a gradio web server
+```angular2html
+python -m llmzoo.deploy.webapp.gradio_web_server
+```
+Now, you can open your browser and chat with a model.
 
 ## 🤖 Limitations
 

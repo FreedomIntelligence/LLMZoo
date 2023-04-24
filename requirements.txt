@@ -9,3 +9,5 @@ uvicorn
 wandb
 markdown2[all]
 requests
+prompt_toolkit
+rich

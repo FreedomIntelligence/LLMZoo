@@ -1,157 +1,139 @@
 import argparse
+import re
 
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from prompt_toolkit import PromptSession
+from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
+from prompt_toolkit.completion import WordCompleter
+from prompt_toolkit.history import InMemoryHistory
+from rich.console import Console
+from rich.live import Live
+from rich.markdown import Markdown
 
-from llmzoo.utils import conv_templates
-
-
-def load_model(model_name, device, num_gpus, load_8bit=False):
-    if device == "cuda":
-        kwargs = {"torch_dtype": torch.float16}
-        if load_8bit:
-            if num_gpus != "auto" and int(num_gpus) != 1:
-                print("8-bit weights are not supported on multiple GPUs. Revert to use one GPU.")
-            kwargs.update({"load_in_8bit": True, "device_map": "auto"})
-        else:
-            if num_gpus == "auto":
-                kwargs["device_map"] = "auto"
-            else:
-                num_gpus = int(num_gpus)
-                if num_gpus != 1:
-                    kwargs.update({
-                        "device_map": "auto",
-                        "max_memory": {i: "13GiB" for i in range(num_gpus)},
-                    })
-    elif device == "cpu":
-        kwargs = {}
-    else:
-        raise ValueError(f"Invalid device: {device}")
-
-    tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side="right", use_fast=True, )
-    model = AutoModelForCausalLM.from_pretrained(model_name, low_cpu_mem_usage=True, **kwargs)
-
-    # calling model.cuda() mess up weights if loading 8-bit weights
-    if device == "cuda" and num_gpus == 1 and not load_8bit:
-        model.cuda()
-
-    return model, tokenizer
+from llmzoo.deploy.webapp.inference import chat_loop, ChatIO
 
 
-@torch.inference_mode()
-def generate_stream(tokenizer, model, params, device, context_len=2048, stream_interval=2):
-    """Adapted from fastchat/serve/model_worker.py::generate_stream"""
+class SimpleChatIO(ChatIO):
+    def prompt_for_input(self, role) -> str:
+        return input(f"{role}: ")
 
-    prompt = params["prompt"]
-    temperature = float(params.get("temperature", 1.0))
-    max_new_tokens = int(params.get("max_new_tokens", 256))
-    stop_str = params.get("stop", None)
+    def prompt_for_output(self, role: str):
+        print(f"{role}: ", end="", flush=True)
 
-    input_ids = tokenizer(prompt).input_ids
-    l_prompt = len(tokenizer.decode(input_ids, skip_special_tokens=False))
-    output_ids = list(input_ids)
+    def stream_output(self, output_stream):
+        pre = 0
+        for outputs in output_stream:
+            outputs = outputs.strip()
+            outputs = outputs.split(" ")
+            now = len(outputs) - 1
+            if now > pre:
+                print(" ".join(outputs[pre:now]), end=" ", flush=True)
+                pre = now
+        print(" ".join(outputs[pre:]), flush=True)
+        return " ".join(outputs)
 
-    max_src_len = context_len - max_new_tokens - 8
-    input_ids = input_ids[-max_src_len:]
 
-    for i in range(max_new_tokens):
-        if i == 0:
-            out = model(torch.as_tensor([input_ids], device=device), use_cache=True)
-            logits = out.logits
-            past_key_values = out.past_key_values
-        else:
-            out = model(input_ids=torch.as_tensor([[token]], device=device),
-                        use_cache=True, past_key_values=past_key_values)
-            logits = out.logits
-            past_key_values = out.past_key_values
+class RichChatIO(ChatIO):
+    def __init__(self):
+        self._prompt_session = PromptSession(history=InMemoryHistory())
+        self._completer = WordCompleter(
+            words=["!exit", "!reset"], pattern=re.compile("$")
+        )
+        self._console = Console()
 
-        last_token_logits = logits[0][-1]
-        if temperature < 1e-4:
-            token = int(torch.argmax(last_token_logits))
-        else:
-            probs = torch.softmax(last_token_logits / temperature, dim=-1)
-            token = int(torch.multinomial(probs, num_samples=1))
+    def prompt_for_input(self, role) -> str:
+        self._console.print(f"[bold]{role}:")
+        prompt_input = self._prompt_session.prompt(
+            completer=self._completer,
+            multiline=False,
+            auto_suggest=AutoSuggestFromHistory(),
+            key_bindings=None,
+        )
+        self._console.print()
+        return prompt_input
 
-        output_ids.append(token)
+    def prompt_for_output(self, role: str):
+        self._console.print(f"[bold]{role}:")
 
-        if token == tokenizer.eos_token_id:
-            stopped = True
-        else:
-            stopped = False
-
-        if i % stream_interval == 0 or i == max_new_tokens - 1 or stopped:
-            output = tokenizer.decode(output_ids, skip_special_tokens=False)
-            pos = output.rfind(stop_str, l_prompt)
-            if pos != -1:
-                stopped = True
-                yield output[l_prompt:pos]
-            else:
-                yield output[l_prompt:]
-
-        if stopped:
-            break
-
-    del past_key_values
+    def stream_output(self, output_stream):
+        """Stream output from a role."""
+        # Create a Live context for updating the console output
+        with Live(console=self._console, refresh_per_second=4) as live:
+            # Read lines from the stream
+            for outputs in output_stream:
+                accumulated_text = outputs
+                if not accumulated_text:
+                    continue
+                # Render the accumulated text as Markdown
+                # NOTE: this is a workaround for the rendering "unstandard markdown"
+                #  in rich. The chatbots output treat "\n" as a new line for
+                #  better compatibility with real-world text. However, rendering
+                #  in markdown would break the format. It is because standard markdown
+                #  treat a single "\n" in normal text as a space.
+                #  Our workaround is adding two spaces at the end of each line.
+                #  This is not a perfect solution, as it would
+                #  introduce trailing spaces (only) in code block, but it works well
+                #  especially for console output, because in general the console does not
+                #  care about trailing spaces.
+                lines = []
+                for line in accumulated_text.splitlines():
+                    lines.append(line)
+                    if line.startswith("```"):
+                        # Code block marker - do not add trailing spaces, as it would
+                        #  break the syntax highlighting
+                        lines.append("\n")
+                    else:
+                        lines.append("  \n")
+                markdown = Markdown("".join(lines))
+                # Update the Live console output
+                live.update(markdown)
+        self._console.print()
+        return outputs
 
 
 def main(args):
-    model_name = args.model_name
-
-    # Model
-    model, tokenizer = load_model(args.model_name, args.device, args.num_gpus, args.load_8bit)
-
-    # Chat
-    conv = conv_templates[args.conv_template].copy()
-    while True:
-        try:
-            inp = input(f"{conv.roles[0]}: ")
-            while inp == "clear":
-                conv = conv_templates[args.conv_template].copy()
-                inp = input(f"{conv.roles[0]}: \n")
-        except EOFError:
-            inp = ""
-        if not inp:
-            print("exit...")
-            break
-
-        conv.append_message(conv.roles[0], inp)
-        conv.append_message(conv.roles[1], None)
-        prompt = conv.get_prompt()
-
-        params = {
-            "model": model_name,
-            "prompt": prompt,
-            "temperature": args.temperature,
-            "max_new_tokens": args.max_new_tokens,
-            "stop": conv.sep
-        }
-
-        print(f"{conv.roles[1]}: ", end="", flush=True)
-        pre = 0
-        for outputs in generate_stream(tokenizer, model, params, args.device):
-            outputs = outputs.strip()
-            outputs = outputs.split(" ")
-            now = len(outputs)
-            if now - 1 > pre:
-                print(" ".join(outputs[pre:now - 1]), end=" ", flush=True)
-                pre = now - 1
-        print(" ".join(outputs[pre:]), flush=True)
-
-        conv.messages[-1][-1] = " ".join(outputs)
-
-        if args.debug:
-            print("\n", {"prompt": prompt, "outputs": outputs}, "\n")
+    if args.style == "simple":
+        chatio = SimpleChatIO()
+    elif args.style == "rich":
+        chatio = RichChatIO()
+    else:
+        raise ValueError(f"Invalid style for console: {args.style}")
+    try:
+        chat_loop(
+            args.model_path,
+            args.device,
+            args.num_gpus,
+            args.max_gpu_memory,
+            args.load_8bit,
+            args.conv_template,
+            args.temperature,
+            args.max_new_tokens,
+            chatio,
+            args.debug,
+        )
+    except KeyboardInterrupt:
+        print("exit...")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-name", type=str, default="facebook/opt-350m")
-    parser.add_argument("--device", type=str, choices=["cuda", "cpu"], default="cuda")
+    parser.add_argument(
+        "--model-path",
+        type=str,
+        default="facebook/opt-350m",
+        help="The path to the weights",
+    )
+    parser.add_argument("--device", type=str, choices=["cpu", "cuda", "mps"], default="cuda")
     parser.add_argument("--num-gpus", type=str, default="1")
-    parser.add_argument("--load-8bit", action="store_true")
-    parser.add_argument("--conv-template", type=str, default="default")
+    parser.add_argument(
+        "--max-gpu-memory",
+        type=str,
+        help="The maximum memory per gpu. Use a string like '13Gib'",
+    )
+    parser.add_argument("--load-8bit", action="store_true", help="Use 8-bit quantization.")
+    parser.add_argument("--conv-template", type=str, default=None, help="Conversation prompt template.")
     parser.add_argument("--temperature", type=float, default=0.7)
     parser.add_argument("--max-new-tokens", type=int, default=512)
+    parser.add_argument("--style", type=str, default="simple", choices=["simple", "rich"], help="Display style.")
     parser.add_argument("--debug", action="store_true")
     args = parser.parse_args()
     main(args)

@@ -79,6 +79,16 @@ class Conversation:
         }
 
 
+def get_default_conv_template(model_name=None):
+    if model_name is None:
+        return default_conversation
+    model_name = model_name.lower()
+    if "phoenix" in model_name:
+        return default_conversation
+    else:
+        raise NotImplementedError
+
+
 conv = Conversation(
     system="A chat between a curious human and an artificial intelligence assistant. "
            "The assistant gives helpful, detailed, and polite answers to the human's questions.\n\n",
