@@ -98,12 +98,14 @@ def main(args):
     else:
         raise ValueError(f"Invalid style for console: {args.style}")
     try:
+        assert not (args.load_8bit and args.load_4bit), "Int8 is not compatible with Int4."
         chat_loop(
             args.model_path,
             args.device,
             args.num_gpus,
             args.max_gpu_memory,
             args.load_8bit,
+            args.load_4bit,
             args.conv_template,
             args.temperature,
             args.max_new_tokens,
@@ -130,6 +132,7 @@ if __name__ == "__main__":
         help="The maximum memory per gpu. Use a string like '13Gib'",
     )
     parser.add_argument("--load-8bit", action="store_true", help="Use 8-bit quantization.")
+    parser.add_argument("--load-4bit", action="store_true", help="Use 4-bit quantization.")
     parser.add_argument("--conv-template", type=str, default=None, help="Conversation prompt template.")
     parser.add_argument("--temperature", type=float, default=0.7)
     parser.add_argument("--max-new-tokens", type=int, default=512)
