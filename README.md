@@ -123,7 +123,7 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 |----------------------|---------------|--------------|-------------------------------------------------------------------------------|
 | Phoenix-chat-7b      | BLOOMZ-7b1-mt | Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-chat-7b)      |
 | Phoenix-inst-chat-7b | BLOOMZ-7b1-mt | Instruction + Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b) |
-
+| Phoenix-inst-chat-7b-int4 | BLOOMZ-7b1-mt | Instruction + Conversation | [parameters](https://huggingface.co/FreedomIntelligence/phoenix-inst-chat-7b-int4) |
 
 ### Chimera (LLM mainly for Latin and Cyrillic languages)
 <details><summary><b>The philosophy to name</b></summary>
