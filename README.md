@@ -32,11 +32,11 @@ pip install -r requirements.txt
 ### CLI Inference
 
 ```bash
-python -m llmzoo.deploy.cli --model-name /path/to/weights/
+python -m llmzoo.deploy.cli --model-path /path/to/weights/
 ```
 For example, for `Phoenix`, run
 ```bash
-python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b
+python -m llmzoo.deploy.cli --model-path FreedomIntelligence/phoenix-inst-chat-7b
 ```
 and it will download the model from Hugging Face automatically. For `Chimera`, please follow this [instruction](https://github.com/FreedomIntelligence/LLMZoo#chimera-llm-mainly-for-latin-and-cyrillic-languages) to prepare the weights.
 
