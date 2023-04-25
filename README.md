@@ -211,6 +211,8 @@ We provide a bilingual, multidimensional comparison across different open-source
 
 ## 👾 Quantization
 
+We offer int8 and int4 quantizations, which will largely reduce the GPU memory consumption, e.g., from ~28GB to ~7GB for phoenix.
+
 ### Int8
 
 You can directly obatin int8 version of phoenix by passing `--load-8bit` when using cli inference. E.g.,
@@ -227,7 +229,6 @@ python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7
 NOTE: We use our patched [AutoGPTQ-triton](https://github.com/GeneZC/AutoGPTQ-triton/tree/main) to support phoenix.
 
 For Chimera, we can not share the int4 version parameters due to restrictions. And you can follow the example in our patched [AutoGPTQ-triton](https://github.com/GeneZC/AutoGPTQ-triton/tree/main/examples).
-
 
 
 ## 🏭 Deployment
