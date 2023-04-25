@@ -209,6 +209,27 @@ We provide a bilingual, multidimensional comparison across different open-source
 | Chimera-inst-chat-13b vs.  **ChatGPT** | **96.6\%** |
 
 
+## 👾 Quantization
+
+### Int8
+
+You can directly obatin int8 version of phoenix by passing `--load-8bit` when using cli inference. This would require package `bitsandbytes` be installed. E.g.,
+```bash
+python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b --load-8bit
+```
+
+### Int4
+
+For int4 version, we take advantage of GPTQ. You can directly obatin int4 version of phoenix by passing int4 version model and `--load-4bit` when using cli inference. This would require package `AutoGPTQ-triton` be installed. E.g.,
+```bash
+python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b-int4 --load-4bit
+```
+NOTE: We use our patched [AutoGPTQ-triton](https://github.com/GeneZC/AutoGPTQ-triton/tree/main) to support phoenix.
+
+For Chimera, we can not share the int4 version parameters due to restrictions. And you can follow the example in our patched [AutoGPTQ-triton](https://github.com/GeneZC/AutoGPTQ-triton/tree/main/examples).
+
+
+
 ## 🏭 Deployment
 
 ### Launch a controller
