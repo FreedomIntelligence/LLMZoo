@@ -213,7 +213,7 @@ We provide a bilingual, multidimensional comparison across different open-source
 
 ### Int8
 
-You can directly obatin int8 version of phoenix by passing `--load-8bit` when using cli inference. This would require package `bitsandbytes` be installed. E.g.,
+You can directly obatin int8 version of phoenix by passing `--load-8bit` when using cli inference. E.g.,
 ```bash
 python -m llmzoo.deploy.cli --model-name FreedomIntelligence/phoenix-inst-chat-7b --load-8bit
 ```
