@@ -22,6 +22,8 @@ except ImportError:
         AutoModelForSeq2SeqLM,
     )
 
+from auto_gptq import AutoGPTQForCausalLM
+    
 from llmzoo.utils import get_default_conv_template, SeparatorStyle
 from llmzoo.deploy.webapp.compression import compress_module
 from llmzoo.deploy.webapp.monkey_patch_non_inplace import replace_llama_attn_with_non_inplace_operations
@@ -47,7 +49,7 @@ def get_gpu_memory(max_gpus=None):
 
 
 def load_model(
-        model_path, device, num_gpus, max_gpu_memory=None, load_8bit=False, debug=False
+        model_path, device, num_gpus, max_gpu_memory=None, load_8bit=False, load_4bit=False, debug=False
 ):
     if device == "cpu":
         kwargs = {}
@@ -94,6 +96,9 @@ def load_model(
 
     if load_8bit:
         compress_module(model, device)
+        
+    if load_4bit:
+        model = AutoGPTQForCausalLM.from_quantized(model_path, device)
 
     if (device == "cuda" and num_gpus == 1) or device == "mps":
         model.to(device)
@@ -219,6 +224,7 @@ def chat_loop(
         num_gpus: str,
         max_gpu_memory: str,
         load_8bit: bool,
+        load_4bit: bool,
         conv_template: Optional[str],
         temperature: float,
         max_new_tokens: int,
@@ -227,7 +233,7 @@ def chat_loop(
 ):
     # Model
     model, tokenizer = load_model(
-        model_path, device, num_gpus, max_gpu_memory, load_8bit, debug
+        model_path, device, num_gpus, max_gpu_memory, load_8bit, load_4bit, debug
     )
 
     # Chat
