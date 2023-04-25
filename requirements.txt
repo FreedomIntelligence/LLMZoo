@@ -11,3 +11,4 @@ markdown2[all]
 requests
 prompt_toolkit
 rich
+git+https://github.com/GeneZC/AutoGPTQ-triton.git
