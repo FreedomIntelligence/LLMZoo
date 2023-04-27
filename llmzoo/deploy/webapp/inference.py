@@ -98,7 +98,7 @@ def load_model(
         compress_module(model, device)
         
     if load_4bit:
-        model = AutoGPTQForCausalLM.from_quantized(model_path, device)
+        model = AutoGPTQForCausalLM.from_quantized(model_path, device, use_triton=True)
 
     if (device == "cuda" and num_gpus == 1) or device == "mps":
         model.to(device)
