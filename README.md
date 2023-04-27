@@ -222,16 +222,16 @@ python -m llmzoo.deploy.cli --model-path FreedomIntelligence/phoenix-inst-chat-7
 
 ### Int4
 
-For int4 version, we take advantage of GPTQ. You can directly obatin int4 version of phoenix by passing int4 version model and `--load-4bit` when using cli inference. This would require package `AutoGPTQ-triton` be installed. E.g.,
+For int4 version, we take advantage of GPTQ. You can directly obatin int4 version of `Phoenix` by passing int4 version model and `--load-4bit` when using cli inference. This would require package `AutoGPTQ` be installed. E.g.,
 ```bash
 python -m llmzoo.deploy.cli --model-path FreedomIntelligence/phoenix-inst-chat-7b-int4 --load-4bit
 ```
-NOTE: We use our patched [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) to support phoenix via,
+We use [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) to support `Phoenix` via,
 ```bash
 BUILD_CUDA_EXT=0 pip install auto-gptq[triton]
 ```
 
-For Chimera, we can not share the int4 version parameters due to restrictions. And you can follow the example in our patched [AutoGPTQ](https://github.com/GeneZC/AutoGPTQ-triton/tree/main/examples).
+For `Chimera`, we can not share the int4 version parameters due to restrictions. And you can follow the example in our patched [AutoGPTQ](https://github.com/GeneZC/AutoGPTQ-triton/tree/main/examples) to conduct quantization by yourselves.
 
 
 ## 🏭 Deployment
