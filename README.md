@@ -177,8 +177,8 @@ We provide a bilingual, multidimensional comparison across different open-source
 | Model                                           | Ratio   |
 |-------------------------------------------------|---------|
 | Phoenix-inst-chat-7b vs. **ChatGPT**            | 85.2\%  |
-| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**       | 96.8\%  |
 | Phoenix-inst-chat-7b vs. **ChatGLM-6b**         | 94.6\%  |
+| Phoenix-inst-chat-7b vs. **Baidu-Wenxin**       | 96.8\%  |
 | **Phoenix-inst-chat-7b** vs. MOSS-moon-003-sft  | 109.7\% |
 | **Phoenix-inst-chat-7b** vs. BELLE-7b-2m        | 122.7\% |
 | **Phoenix-inst-chat-7b** vs. Chinese-Alpaca-7b  | 135.3\% |
@@ -191,8 +191,8 @@ We provide a bilingual, multidimensional comparison across different open-source
 |                                      | win | tie | lose  |
 |--------------------------------------|:---:|:---:|:-----:|
 | Phoenix vs. **ChatGPT**              | 12  |  35 |  53   |
-| Phoenix vs. **Baidu-Wenxin**         | 29  |  25 |  46   |
 | Phoenix vs. **ChatGLM-6b**           | 36  |  11 |  53   |
+| Phoenix vs. **Baidu-Wenxin**         | 29  |  25 |  46   |
 | **Phoenix** vs. BELLE-7b-2m          | 55  |  31 |  14   |
 | **Phoenix** vs. Chinese-Alpaca-13b   | 56  |  31 |  13   |
 
