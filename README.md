@@ -68,9 +68,6 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 + (Role, Instruction, Input) ---> Output
 ```
 
-> Check [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo) for the collection of instruction datasets.
-
-> Check [GPT-API-Accelerate Tool](https://github.com/FreedomIntelligence/GPT-API-Accelerate) for faster data generation using ChatGPT.
 </details>
 
 <details><summary><b>Conversation data</b></summary>
@@ -83,6 +80,10 @@ We used the following two types of data for training `Phoenix` and `Chimera`:
 + Multi-round conversation data
 ```
 </details>
+
+> Check [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo) for the collection of instruction datasets.
+
+> Check [GPT-API-Accelerate Tool](https://github.com/FreedomIntelligence/GPT-API-Accelerate) for faster data generation using ChatGPT.
 
 ### Download
 - [phoenix-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1): The data used for training Phoenix and Chimera.
