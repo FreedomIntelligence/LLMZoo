@@ -92,13 +92,13 @@ def load_model(
         model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
     else:
         tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=True)
-        model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
+        if load_4bit:
+            model = AutoGPTQForCausalLM.from_quantized(model_path, device, use_triton=True)
+        else:
+            model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
 
     if load_8bit:
         compress_module(model, device)
-        
-    if load_4bit:
-        model = AutoGPTQForCausalLM.from_quantized(model_path, device, use_triton=True)
 
     if (device == "cuda" and num_gpus == 1) or device == "mps":
         model.to(device)
