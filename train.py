@@ -41,7 +41,7 @@ def train():
     parser = transformers.HfArgumentParser((ModelArguments, DataArguments, TrainingArguments))
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
 
-    model, tokenizer, image_processor = build_model(model_args, training_args)
+    model, tokenizer = build_model(model_args, training_args)
 
     data_module = make_supervised_data_module(tokenizer=tokenizer, data_args=data_args)
 
@@ -49,9 +49,9 @@ def train():
 
     if model_args.lora:
         old_state_dict = model.state_dict
-        model.state_dict = (lambda self, *_, **__: get_peft_model_state_dict(
-            self, old_state_dict()
-        )).__get__(model, type(model))
+        model.state_dict = (
+            lambda self, *_, **__: get_peft_model_state_dict(self, old_state_dict())
+        ).__get__(model, type(model))
         if torch.__version__ >= "2":
             model = torch.compile(model)
 
