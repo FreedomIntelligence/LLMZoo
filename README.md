@@ -7,7 +7,7 @@
 ⚡LLM Zoo is a project that provides data, models, and evaluation benchmark for large language models.⚡ [[Tech Report]](assets/llmzoo.pdf)
 
 ## ✨ Latest News
-- [05/05/2023]: Release the training code.
+- [05/05/2023]: Release the training code. Now, you can replicate a multilingual instruction-following LLM by yourself. :-)
 - [04/24/2023]: Add more results (e.g., MOSS) in the evaluation benchmark.
 - [04/08/2023]: Release the Phoenix (for all languages) and Chimera (for Latin languages) models.
 
