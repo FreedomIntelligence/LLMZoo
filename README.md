@@ -22,7 +22,6 @@
 
 ## 🎬 Get started
 ### Install
-
 Run the following command to install the required packages:
 
 ```angular2html
@@ -30,7 +29,6 @@ pip install -r requirements.txt
 ```
 
 ### CLI Inference
-
 ```bash
 python -m llmzoo.deploy.cli --model-path /path/to/weights/
 ```
@@ -238,20 +236,36 @@ For `Chimera`, we can not share the int4 version parameters due to restrictions.
 ## 🏭 Deployment
 
 ### Launch a controller
-```angular2html
+```shell
 python -m llmzoo.deploy.webapp.controller
 ```
 
 ### Launch a model worker
-```angular2html
+```shell
 python -m llmzoo.deploy.webapp.model_worker --model-path /path/to/weights/
 ```
 
 ### Launch a gradio web server
-```angular2html
+```shell
 python -m llmzoo.deploy.webapp.gradio_web_server
 ```
 Now, you can open your browser and chat with a model.
+
+
+## 😀 Training by yourself
+### Prepare the data
+You can either download the [phoenix-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/phoenix-sft-data-v1) data or prepare your own data. Put your data on the path `data/data.json`.
+
+### Training
+For `Phoenix`, run
+```shell
+bash scripts/train_phoenix_7b.sh
+```
+For `Chimera`, prepare the LLaMA weights following [this instruction]((https://huggingface.co/docs/transformers/main/model_doc/llama)) and run
+```shell
+bash scripts/train_chimera_7b.sh
+bash scripts/train_chimera_13b.sh
+```
 
 ## 🤖 Limitations
 
