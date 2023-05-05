@@ -7,7 +7,6 @@ import transformers
 
 def safe_save_model_for_hf_trainer(trainer: transformers.Trainer,
                                    output_dir: str):
-    """Collects the state dict and dump to disk."""
     state_dict = trainer.model.state_dict()
     if trainer.args.should_save:
         cpu_state_dict = {
@@ -15,18 +14,16 @@ def safe_save_model_for_hf_trainer(trainer: transformers.Trainer,
             for key, value in state_dict.items()
         }
         del state_dict
-        trainer._save(output_dir, state_dict=cpu_state_dict)  # noqa
+        trainer._save(output_dir, state_dict=cpu_state_dict)
 
 
 class SeparatorStyle(Enum):
-    """Different separator style."""
     SINGLE = auto()
     TWO = auto()
 
 
 @dataclasses.dataclass
 class Conversation:
-    """A class that keeps all conversation history."""
     system: str
     roles: List[str]
     messages: List[List[str]]
@@ -83,7 +80,7 @@ def get_default_conv_template(model_name=None):
     if model_name is None:
         return default_conversation
     model_name = model_name.lower()
-    if "phoenix" in model_name:
+    if "phoenix" in model_name or "chimera" in model_name:
         return default_conversation
     else:
         raise NotImplementedError
