@@ -261,7 +261,7 @@ For `Phoenix`, run
 ```shell
 bash scripts/train_phoenix_7b.sh
 ```
-For `Chimera`, prepare the LLaMA weights following [this instruction]((https://huggingface.co/docs/transformers/main/model_doc/llama)) and run
+For `Chimera`, prepare the LLaMA weights following [this instruction](https://huggingface.co/docs/transformers/main/model_doc/llama) and run
 ```shell
 bash scripts/train_chimera_7b.sh
 bash scripts/train_chimera_13b.sh
