@@ -234,6 +234,9 @@ BUILD_CUDA_EXT=0 pip install auto-gptq[triton]
 
 For `Chimera`, we can not share the int4 version parameters due to restrictions. And you can follow the example in our patched [AutoGPTQ](https://github.com/GeneZC/AutoGPTQ-triton/tree/main/examples) to conduct quantization by yourselves.
 
+Thank to [yhyu13](https://github.com/yhyu13), please check the  merged weight and GPTQ quantized weight for chimera instant chat 13b in [chimera-inst-chat-13b-hf](https://huggingface.co/Yhyu13/) and [chimera-inst-chat-13b-gptq-4bit](https://huggingface.co/Yhyu13/chimera-inst-chat-13b-gptq-4bit).
+
+
 
 ## 🏭 Deployment
 
