@@ -236,7 +236,7 @@ For `Chimera`, we can not share the int4 version parameters due to restrictions.
 
 Thank [yhyu13](https://github.com/yhyu13), please check the merged weight and GPTQ quantized weight for chimera in [chimera-inst-chat-13b-hf](https://huggingface.co/Yhyu13/) and [chimera-inst-chat-13b-gptq-4bit](https://huggingface.co/Yhyu13/chimera-inst-chat-13b-gptq-4bit).
 
-**Inference of LLaMA model in pure C/C++**: You can refer to this [link](https://github.com/wtxfrancise/quantize_models) to run `Chimera` or `Phoenix` on your PC.
+**Inference in pure C/C++**: You can refer to this [link](https://github.com/wtxfrancise/quantize_models) to run `Chimera` or `Phoenix` on your PC.
 
 ## 🏭 Deployment
 
