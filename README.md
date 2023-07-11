@@ -154,7 +154,7 @@ python tools/apply_delta.py \
 > The philosophy to name: Its Chinese name is [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or 华佗GPT to commemorate the great Chinese physician named Hua Tuo (华佗), who lived around 200 AC. Training is already finished; we will release it in two weeks; some efforts are needed to deploy it in public cloud servers in case of massive requests.
 </details>
 
-Check our models in [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or try our [demo](https://www.huatuogpt.cn/) (API key required).
+Check our models in [HuatuoGPT](https://github.com/FreedomIntelligence/HuatuoGPT) or try our [demo](https://www.huatuogpt.cn/) .
 Similar biomedical models could be seen in [biomedical LLMs](assets/biomedical-models.md).
 
 <details><summary><b>More models in the future</b></summary>
