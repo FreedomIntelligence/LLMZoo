@@ -1,0 +1,100 @@
+{"id":1,"label":"generic","query":"How can I improve my time management skills?"}
+{"id":2,"label":"generic","query":"What is the most effective way to deal with pressure?"}
+{"id":3,"label":"generic","query":"What is the main difference between the Python and JavaScript programming languages?"}
+{"id":4,"label":"generic","query":"How to improve my work efficiency while working from home?"}
+{"id":5,"label":"generic","query":"Can you explain the basic knowledge of quantum computing?"}
+{"id":6,"label":"generic","query":"What is the main difference between plant protein and animal protein?"}
+{"id":7,"label":"generic","query":"How can I develop my critical thinking skills?"}
+{"id":8,"label":"generic","query":"What is the main challenge faced by the education sector today?"}
+{"id":9,"label":"generic","query":"What are the main factors affecting consumer behavior?"}
+{"id":10,"label":"generic","query":"What is the most effective conflict resolution strategy in the workplace?"}
+{"id":11,"label":"knowledge","query":"What potential impacts on the environment and human health may arise from using disposable plastic bottles compared to reusable ones?"}
+{"id":12,"label":"knowledge","query":"What factors would you consider when designing an inclusive and accessible public transportation system?"}
+{"id":13,"label":"knowledge","query":"How can the government use fiscal and monetary policies to deal with an economic recession?"}
+{"id":14,"label":"knowledge","query":"How do language and cultural barriers affect people's communication and relationship formation in a multicultural society?"}
+{"id":15,"label":"knowledge","query":"A scenario where artificial intelligence is used to improve the quality and efficiency of healthcare services."}
+{"id":16,"label":"knowledge","query":"The process of using CRISPR-Cas9 technology for gene editing, and discussing its potential applications and ethical implications."}
+{"id":17,"label":"knowledge","query":"How vaccines protect individuals and communities from the impact of infectious diseases, and what is herd immunity?"}
+{"id":18,"label":"knowledge","query":"How do social media platforms impact people's access to and sharing of news, and what are their potential effects on the spread of false information?"}
+{"id":19,"label":"knowledge","query":"How do cultural, social, and economic factors affect people's food choices, and how can this knowledge be used to promote healthier eating?"}
+{"id":20,"label":"knowledge","query":"Explain the process of natural selection and how it promotes species evolution and adaptation."}
+{"id":21,"label":"roleplay","query":"If you were a medieval knight, how would you introduce yourself at a royal banquet?"}
+{"id":22,"label":"roleplay","query":"As a pirate captain, what would you say to your crew to motivate them to search for hidden treasures?"}
+{"id":23,"label":"roleplay","query":"If you were a character in Shakespeare's works, how would you express your love to someone in a monologue?"}
+{"id":24,"label":"roleplay","query":"As a superhero, how would you explain your origin story to a curious child?"}
+{"id":25,"label":"roleplay","query":"Assuming you are a time traveler from the year 3000 AD, what technological advancements would you tell people about?"}
+{"id":26,"label":"roleplay","query":"As a sports commentator, please describe the winning tactics in the final few seconds of the championship game."}
+{"id":27,"label":"roleplay","query":"Pretend to be a world-renowned chef. How would you describe your signature dish to the judging panel?"}
+{"id":28,"label":"roleplay","query":"You are a mountaineer, climbing to the peak of Mount Everest. Describe your emotions and the scenery you see from the summit."}
+{"id":29,"label":"roleplay","query":"As a space colonist on Mars, please describe your daily life and the challenges you face living on another planet."}
+{"id":30,"label":"roleplay","query":"Pretend to be a character living in a post-apocalyptic world. Describe how you survive and the allies you encounter."}
+{"id":31,"label":"common-sense","query":"How to determine whether a restaurant is popular among the locals or mainly attracts tourists, and why is this information useful?"}
+{"id":32,"label":"common-sense","query":"What are the subtle clues that indicate someone is pretending to understand a topic or conversation but is actually confused or unaware?"}
+{"id":33,"label":"common-sense","query":"Why do some people choose to use paper maps or seek directions instead of relying on GPS devices or smartphone applications?"}
+{"id":34,"label":"common-sense","query":"How to tell if someone is truly interested in a conversation or just being polite?"}
+{"id":35,"label":"common-sense","query":"Even if the prices are higher, why do some people still prefer to shop at small local stores instead of large chain stores?"}
+{"id":36,"label":"common-sense","query":"How to evaluate the credibility of information sources, such as news articles or blog posts, without relying solely on the reputation of the author or publisher?"}
+{"id":37,"label":"common-sense","query":"Why do some people enjoy feeling scared, such as through watching horror movies or riding roller coasters, while others avoid these experiences?"}
+{"id":38,"label":"common-sense","query":"How does observing the behavior of others in social situations provide clues about cultural norms and expectations?"}
+{"id":39,"label":"common-sense","query":"Do we have an obligation to explore space, or should we first solve the problems on Earth?"}
+{"id":40,"label":"common-sense","query":"In an increasingly automated world, is it more important to prioritize creating job opportunities or technological progress?"}
+{"id":41,"label":"fermi","query":"What is the average number of times a human blinks in their lifetime? Please try to explain your answer. Your explanation should gradually lead the reader to understand your reasoning process."}
+{"id":42,"label":"fermi","query":"How many atoms are there in a grain of salt? Please try to explain your answer. Your explanation should guide the reader through your reasoning process step by step."}
+{"id":43,"label":"fermi","query":"How many lightning strikes occur on Earth each day? Please try to explain your answer. Your explanation should lead the reader step by step to understand your reasoning process."}
+{"id":44,"label":"fermi","query":"How many balloons would it take to lift a house like in the movie \"Up\"? Please try to explain your answer and lead the readers through your reasoning process step by step."}
+{"id":45,"label":"fermi","query":"How many text messages are sent globally every minute? Please try to explain your answer. Your explanation should gradually lead the reader to understand your reasoning process."}
+{"id":46,"label":"fermi","query":"How many words are spoken globally each day? Please try to explain your answer. Your explanation should gradually lead the reader to understand your reasoning process."}
+{"id":47,"label":"fermi","query":"How many snowflakes typically fall during a winter? Please try to explain your answer. Your explanation should gradually lead the reader to understand your reasoning process."}
+{"id":48,"label":"fermi","query":"How many pages are there in all books? Please try to explain your answer. Your explanation should gradually lead the reader to understand your reasoning process."}
+{"id":49,"label":"fermi","query":"Since the origin of life, how many times has the Earth revolved around the Sun? Please try to explain your answer. Your explanation should lead the reader to understand your reasoning process step by step."}
+{"id":50,"label":"fermi","query":"How many songs have been recorded in history? Please try to explain your answer. Your explanation should lead the reader to understand your reasoning process step by step."}
+{"id":51,"label":"counterfactual","query":"If the Internet had been invented during the Renaissance, what would have happened?"}
+{"id":52,"label":"counterfactual","query":"What would happen if the Aztecs successfully repelled the Spanish conquerors?"}
+{"id":53,"label":"counterfactual","query":"What if the Black Death had not occurred in the 14th century?"}
+{"id":54,"label":"counterfactual","query":"What if Isaac Newton had paid attention to biology instead of physics?"}
+{"id":55,"label":"counterfactual","query":"What if The Beatles had never formed?"}
+{"id":56,"label":"counterfactual","query":"What if Turing had not cracked the Enigma code during World War II?"}
+{"id":57,"label":"counterfactual","query":"What would happen if the Suez Canal was never built?"}
+{"id":58,"label":"counterfactual","query":"What if the Maya civilization had never mysteriously collapsed?"}
+{"id":59,"label":"counterfactual","query":"What would happen if Columbus had not discovered America?"}
+{"id":60,"label":"counterfactual","query":"What if Vincent van Gogh had become a successful artist during his lifetime?"}
+{"id":61,"label":"writing","query":"Can you help me write a formal email to a potential business partner, proposing a joint venture?"}
+{"id":62,"label":"writing","query":"Can you help me write a resignation letter to my current employer, expressing gratitude for the opportunities provided and leaving on good terms?"}
+{"id":63,"label":"writing","query":"Write a formal recommendation letter for a student applying for an advanced research course in Computer Science using appropriate format."}
+{"id":64,"label":"writing","query":"Write a compelling product release announcement email to inform our customers about our new software solution."}
+{"id":65,"label":"writing","query":"Write an apology email to a customer who experienced a delayed order and assure them that the problem has been resolved."}
+{"id":66,"label":"writing","query":"Write a script for a YouTube video discussing the history and cultural significance of jazz music."}
+{"id":67,"label":"writing","query":"Write an interesting travel blog article, introducing the recent travel experience to Hawaii, with a focus on cultural experiences and must-visit attractions."}
+{"id":68,"label":"writing","query":"Write a fascinating movie review for a recently released sci-fi film, discussing its plot, characters, and special effects."}
+{"id":69,"label":"writing","query":"Write a script for a podcast discussing the impact of streaming platforms on the music industry."}
+{"id":70,"label":"writing","query":"Write a symphony concert review, discussing the orchestra's performance and the overall experience of the audience."}
+{"id":71,"label":"coding","query":"Write a C++ program that reads a text file line by line and counts the number of times a specific word appears in the file. \n\nPlease provide only the translation without any additional information."}
+{"id":72,"label":"coding","query":"Use dynamic programming to implement a Python function to find the longest common subsequence of two input strings. Please only provide the translation content and do not provide any additional information."}
+{"id":73,"label":"coding","query":"Implement a Python regular expression for validating email addresses."}
+{"id":74,"label":"coding","query":"Write a program that uses dynamic programming to find the nth Fibonacci number."}
+{"id":75,"label":"coding","query":"Implement a binary search algorithm to find a specific element in a sorted array."}
+{"id":76,"label":"coding","query":"Implement a queue data structure in Python using two stacks."}
+{"id":77,"label":"coding","query":"Implement a program to find the common elements in two arrays without using any additional data structures. \n\nPlease provide only the translation and no further information."}
+{"id":78,"label":"math","query":"Given that f(x) = 5x^3 - 2x + 3, find the value of f(2)."}
+{"id":79,"label":"math","query":"Find the value of x in the equation 3x + 10 = 5(x - 2). Please provide only the translation of the text without any additional information."}
+{"id":80,"label":"math","query":"What is the length of the line segment if its endpoints are (2, -2) and (10, 4)? \nPlease provide only the translation and no additional information."}
+{"id":81,"label":"grammarly","query":"I went to the supermarket yesterday and bought some food."}
+{"id":82,"label":"grammarly","query":"Although it's cold, I enjoy outdoor sports. My friends and I often go for a morning run, and we don't give up even if the weather is bad."}
+{"id":83,"label":"grammarly","query":"Please translate the following text into English:\n\"Please rephrase the following sentence to make it more concise: Although he was very tired, he still persistently completed the task.\"\nPlease only provide the translation of the text and not any additional information."}
+{"id":84,"label":"grammarly","query":"According to the following requirements, modify the following sentence: He likes to eat apples. The requirement is to change \"apples\" to \"bananas\"."}
+{"id":85,"label":"grammarly","query":"Please translate the following text into English:\nPlease rewrite the following sentence in the passive voice. They are building a new bridge.\nPlease only provide the translation of the preceding text and no other information."}
+{"id":86,"label":"grammarly","query":"Please translate the following sentence into English:\nPlease rewrite the following sentence into indirect speech. He said, \"I am very busy today.\"\n\nPlease provide only the translation of the preceding text without any additional information."}
+{"id":87,"label":"grammarly","query":"Translation: Please translate the following sentence into English: \"He likes to eat chocolate.\"\n\nTransformation: Doesn't he like to eat chocolate?"}
+{"id":88,"label":"grammarly","query":"I bought a new book yesterday. (Context: I want to emphasize that the book is very beautiful.)"}
+{"id":89,"label":"grammarly","query":"Please translate the following text into English:\nRewrite the following sentence into a tag question. She is a doctor.\nPlease provide only the translation of the previous text and do not provide any other information."}
+{"id":90,"label":"grammarly","query":"Rewrite the following sentence in comparative form. This room is very spacious."}
+{"id":91,"label":"reasoning","query":"There are 4 apples on the table. Xiaohong ate 1, Xiaogang took away 2, how many apples are left?"}
+{"id":92,"label":"reasoning","query":"Facing north, what direction is it if you turn 90 degrees to the left?"}
+{"id":93,"label":"reasoning","query":"There are three things: 1) the water in the kitchen has boiled; 2) need to collect clothes on a rainy day; 3) call a friend. In what order should they be dealt with?"}
+{"id":94,"label":"reasoning","query":"Is the logic correct: because the murderer is not a backpacker, and you are not a backpacker, therefore you are the murderer?"}
+{"id":95,"label":"reasoning","query":"What is the next number in the sequence 1, 4, 9, 16?"}
+{"id":96,"label":"reasoning","query":"Three people live together, a doctor, a chef and a teacher. One day, the teacher caught a cold. Among these three people, who is most likely to help this teacher?"}
+{"id":97,"label":"reasoning","query":"The police found the victim wearing a watch at the scene of the crime, and the time displayed on the watch was 5 o'clock in the afternoon. What inference could the police possibly draw?"}
+{"id":98,"label":"reasoning","query":"Which one is heavier, one kilogram of cotton or one kilogram of iron?"}
+{"id":99,"label":"reasoning","query":"Cut off the top-right corner of a square, how many edges does it have left now?"}
+{"id":100,"label":"reasoning","query":"There are two rooms, one with a hair dryer and the other with an air conditioner. Which room is more suitable for staying in during the summer?"}

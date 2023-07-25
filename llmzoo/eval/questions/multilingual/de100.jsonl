@@ -1,0 +1,100 @@
+{"id":1,"label":"generic","query":"Wie kann ich meine Zeitmanagement-Fähigkeiten verbessern?"}
+{"id":2,"label":"generic","query":"Was ist die effektivste Methode, um mit Stress umzugehen?"}
+{"id":3,"label":"generic","query":"Was ist der Hauptunterschied zwischen den Programmiersprachen Python und JavaScript?"}
+{"id":4,"label":"generic","query":"Wie kann ich meine Arbeitsproduktivität verbessern, wenn ich von zu Hause aus arbeite?"}
+{"id":5,"label":"generic","query":"Kannst du die Grundlagen der Quantencomputing erklären?"}
+{"id":6,"label":"generic","query":"Was ist der Hauptunterschied zwischen pflanzlichen Proteinen und tierischen Proteinen?"}
+{"id":7,"label":"generic","query":"Wie kann ich meine Fähigkeit zum kritischen Denken entwickeln?"}
+{"id":8,"label":"generic","query":"Welche sind die wichtigsten Herausforderungen, vor denen das Bildungsministerium heute steht?"}
+{"id":9,"label":"generic","query":"Was sind die Hauptfaktoren, die das Verbraucherverhalten beeinflussen?"}
+{"id":10,"label":"generic","query":"Was ist die effektivste Konfliktlösungsstrategie am Arbeitsplatz?"}
+{"id":11,"label":"knowledge","query":"Im Vergleich zu wiederverwendbaren Flaschen könnten Einwegplastikflaschen mögliche Auswirkungen auf die Umwelt und die menschliche Gesundheit haben?"}
+{"id":12,"label":"knowledge","query":"Beim Entwurf eines inklusiven und barrierefreien öffentlichen Verkehrssystems, welche Faktoren würden Sie berücksichtigen?"}
+{"id":13,"label":"knowledge","query":"Wie nutzt die Regierung Finanz- und Geldpolitik zur Bewältigung von wirtschaftlichen Abschwüngen?"}
+{"id":14,"label":"knowledge","query":"Wie wirken sich Sprach- und Kulturbarrieren auf die Kommunikation und Beziehungsbildung von Menschen in einer multikulturellen Gesellschaft aus?"}
+{"id":15,"label":"knowledge","query":"Beschreiben Sie eine Szene, in der künstliche Intelligenz genutzt wird, um die Qualität und Effizienz der Gesundheitsversorgung zu verbessern."}
+{"id":16,"label":"knowledge","query":"Der Prozess der Geneditierung mit CRISPR-Cas9-Technologie sowie ihre potenziellen Anwendungen und ethischen Auswirkungen wurden diskutiert."}
+{"id":17,"label":"knowledge","query":"Wie schützen Impfungen Individuen und Gemeinden vor den Auswirkungen ansteckender Krankheiten und was ist Herdenimmunität?"}
+{"id":18,"label":"knowledge","query":"Wie beeinflussen soziale Medienplattformen den Zugang zu und die Verbreitung von Nachrichten und welche potenziellen Auswirkungen hat dies auf die Verbreitung von Fehlinformationen?"}
+{"id":19,"label":"knowledge","query":"Wie beeinflussen kulturelle, soziale und wirtschaftliche Faktoren die Ernährungswahl der Menschen und wie können diese Erkenntnisse genutzt werden, um eine gesündere Ernährung zu fördern?"}
+{"id":20,"label":"knowledge","query":"Erklären Sie den Prozess der natürlichen Selektion und wie er die Evolution und Anpassung von Arten fördert."}
+{"id":21,"label":"roleplay","query":"Wenn Sie ein mittelalterlicher Ritter wären, wie würden Sie sich bei einem königlichen Bankett vorstellen?"}
+{"id":22,"label":"roleplay","query":"Als Kapitän eines Piratenschiffs, was würden Sie Ihren Mannschaften sagen, um sie zu motivieren, nach versteckten Schätzen zu suchen?"}
+{"id":23,"label":"roleplay","query":"Wenn du eine Figur in den Werken von Shakespeare wärst, wie würdest du in einem Monolog deine Liebe zu jemandem ausdrücken?"}
+{"id":24,"label":"roleplay","query":"Als Superheld, wie würden Sie einem neugierigen Kind Ihre Ursprungsgeschichte erklären?"}
+{"id":25,"label":"roleplay","query":"Angenommen, Sie sind ein Zeitreisender aus dem Jahr 3000. Welche technischen Fortschritte würden Sie den Menschen mitteilen?"}
+{"id":26,"label":"roleplay","query":"Als Sportkommentator beschreiben Sie bitte die Gewinnstrategie in den letzten Sekunden des Meisterschaftsspiels."}
+{"id":27,"label":"roleplay","query":"Stellen Sie sich vor, Sie sind ein weltberühmter Koch. Wie würden Sie den Bewertungsausschuss Ihr Meistergericht beschreiben?"}
+{"id":28,"label":"roleplay","query":"Du bist ein Bergsteiger und besteigst den Gipfel des Mount Everest. Beschreibe deine Emotionen und was du vom Gipfel aus siehst."}
+{"id":29,"label":"roleplay","query":"Als Raumkolonist auf dem Mars beschreiben Sie bitte Ihren Alltag und die Herausforderungen, denen Sie beim Leben auf einem anderen Planeten begegnen."}
+{"id":30,"label":"roleplay","query":"Stelle dich vor, du bist eine Person, die in einer Welt lebt, die dem Ende nahe ist. Beschreibe, wie du überlebst und welche Verbündeten du triffst."}
+{"id":31,"label":"common-sense","query":"Wie kann man feststellen, ob ein Restaurant bei Einheimischen beliebt ist oder hauptsächlich Touristen anzieht, und warum sind diese Informationen nützlich?"}
+{"id":32,"label":"common-sense","query":"Welche subtilen Hinweise deuten darauf hin, dass jemand ein Thema oder Gespräch versteht, aber tatsächlich verwirrt oder unverständlich ist, während er vorgibt, es zu verstehen?"}
+{"id":33,"label":"common-sense","query":"Warum wählen manche Menschen eine papierbasierte Karte oder suchen nach Richtungen, anstatt auf GPS-Geräte oder Smartphone-Apps zu verlassen?"}
+{"id":34,"label":"common-sense","query":"Wie unterscheidet man, ob jemand wirklich am Gespräch interessiert ist oder nur höflich sein möchte?"}
+{"id":35,"label":"common-sense","query":"Auch wenn die Preise höher sind, warum kaufen einige Menschen lieber in kleinen örtlichen Geschäften ein als in großen Einzelhandelsketten?"}
+{"id":36,"label":"common-sense","query":"Wie kann man die Glaubwürdigkeit von Informationsquellen bewerten, wie zum Beispiel Nachrichtenartikel oder Blog-Beiträge, ohne sich ausschließlich auf den Ruf des Autors oder des Verlags zu verlassen?"}
+{"id":37,"label":"common-sense","query":"Warum genießen manche Menschen das Gefühl von Angst, zum Beispiel durch das Ansehen von Horrorfilmen oder Achterbahnfahren, während andere diese Erfahrungen vermeiden?"}
+{"id":38,"label":"common-sense","query":"Wie können Beobachtungen des Verhaltens anderer Personen in sozialen Situationen Hinweise auf kulturelle Normen und Erwartungen liefern?"}
+{"id":39,"label":"common-sense","query":"Sind wir verpflichtet, den Weltraum zu erkunden oder sollten wir zuerst die Probleme der Erde lösen?"}
+{"id":40,"label":"common-sense","query":"In einer zunehmend automatisierten Welt ist es wichtiger, die Schaffung von Arbeitsplätzen oder den technologischen Fortschritt zu priorisieren?"}
+{"id":41,"label":"fermi","query":"Wie oft blinzelt ein Mensch durchschnittlich im Leben? Versuche bitte, deine Antwort zu erklären. Deine Erklärung sollte den Leser schrittweise durch deinen Gedankengang führen."}
+{"id":42,"label":"fermi","query":"Wie viele Atome hat ein Salzkorn in der Größe? Versuch deine Antwort zu erklären. Deine Erklärung sollte den Leser schrittweise durch deine Schlussfolgerungen führen."}
+{"id":43,"label":"fermi","query":"Wie oft blitzt es täglich auf der Erde? Bitte versuchen Sie, Ihre Antwort zu erklären. Ihre Erklärung sollte den Leser schrittweise durch Ihren Gedankengang führen."}
+{"id":44,"label":"fermi","query":"Wie viele Luftballons braucht man, um ein Haus wie in dem Film \"Oben\" in die Luft zu heben? Versuchen Sie, Ihre Antwort zu erklären. Ihre Erklärung sollte die Leser Schritt für Schritt durch Ihren Denkprozess führen."}
+{"id":45,"label":"fermi","query":"Wie viele SMS werden weltweit pro Minute versandt? Versuchen Sie, Ihre Antwort zu erklären. Ihre Erklärung sollte den Leser schrittweise durch Ihren Denkprozess führen."}
+{"id":46,"label":"fermi","query":"Wie viele Wörter werden täglich weltweit gesprochen? Versuche deine Antwort zu erklären. Deine Erklärung sollte den Leser schrittweise durch deinen Denkprozess führen."}
+{"id":47,"label":"fermi","query":"Wie viele Schneeflocken fallen in einem typischen Winter? Versuche deine Antwort zu erklären. Deine Erklärung sollte die Leser durch deinen Denkprozess schrittweise führen."}
+{"id":48,"label":"fermi","query":"Wie viele Seiten gibt es in allen Büchern? Versuchen Sie, Ihre Antwort zu erklären. Ihre Erklärung sollte den Leser schrittweise durch Ihren Denkprozess führen."}
+{"id":49,"label":"fermi","query":"Seit dem Ursprung des Lebens hat die Erde wie oft um die Sonne herumgedreht? Versuche, deine Antwort zu erklären. Deine Erklärung sollte den Leser schrittweise durch deinen Denkprozess führen."}
+{"id":50,"label":"fermi","query":"Wie viele Songs wurden insgesamt in der Geschichte aufgenommen? Versuchen Sie, Ihre Antwort zu erklären. Ihre Erklärung sollte den Leser schrittweise durch Ihren Denkprozess führen."}
+{"id":51,"label":"counterfactual","query":"Wenn das Internet während der Renaissance erfunden worden wäre, wie würde es dann wohl aussehen?"}
+{"id":52,"label":"counterfactual","query":"Was würde passieren, wenn die Azteken die spanischen Eroberer erfolgreich abwehren würden?"}
+{"id":53,"label":"counterfactual","query":"Was wäre passiert, wenn die Pest im 14. Jahrhundert nicht aufgetreten wäre?"}
+{"id":54,"label":"counterfactual","query":"Wenn sich Isaac Newton für Biologie statt Physik interessiert hätte, was wäre dann passiert?"}
+{"id":55,"label":"counterfactual","query":"Was wäre passiert, wenn die Beatles nie gegründet hätten?"}
+{"id":56,"label":"counterfactual","query":"Was wäre passiert, wenn Turing während des Zweiten Weltkriegs den Enigma-Code nicht geknackt hätte?"}
+{"id":57,"label":"counterfactual","query":"Was wäre, wenn der Suez-Kanal niemals gebaut worden wäre?"}
+{"id":58,"label":"counterfactual","query":"Was wäre passiert, wenn die Maya-Zivilisation niemals auf mysteriöse Weise zusammengebrochen wäre?"}
+{"id":59,"label":"counterfactual","query":"Was würde passieren, wenn Kolumbus Amerika nicht entdeckt hätte?"}
+{"id":60,"label":"counterfactual","query":"Was wäre passiert, wenn Vincent van Gogh zu Lebzeiten ein erfolgreicher Künstler geworden wäre?"}
+{"id":61,"label":"writing","query":"Können Sie mir helfen, eine formelle E-Mail an potentielle Geschäftspartner zu schreiben, um eine gemeinsame Gründung vorzuschlagen?"}
+{"id":62,"label":"writing","query":"Können Sie mir helfen, einen Rücktrittsbrief an meinen derzeitigen Arbeitgeber zu schreiben, um unter guten Bedingungen zu gehen und meine Dankbarkeit für die gebotene Gelegenheit auszudrücken?"}
+{"id":63,"label":"writing","query":"Verfassen Sie als erfahrener Übersetzer ein formales Empfehlungsschreiben im geeigneten Format für einen Studenten, der sich für einen fortgeschrittenen Forschungskurs in Informatik bewirbt."}
+{"id":64,"label":"writing","query":"Verfassen Sie eine Aufmerksamkeit erregende E-Mail-Ankündigung zur Produkteinführung, um unsere Kunden über unsere neue Softwarelösung zu informieren."}
+{"id":65,"label":"writing","query":"Schreiben Sie eine Entschuldigungs-E-Mail an einen Kunden, der eine Bestellverzögerung erlebt hat und versichern Sie ihm, dass das Problem behoben wurde."}
+{"id":66,"label":"writing","query":"Ein Drehbuch für ein YouTube-Video schreiben, das die Geschichte und kulturelle Bedeutung des Jazz erforscht."}
+{"id":67,"label":"writing","query":"Schreiben Sie einen interessanten Reiseblog-Artikel über meine letzte Reise nach Hawaii und betonen Sie kulturelle Erfahrungen und unverzichtbare Sehenswürdigkeiten."}
+{"id":68,"label":"writing","query":"Verfassen Sie eine fesselnde Filmkritik für einen kürzlich veröffentlichten Sci-Fi-Film und diskutieren Sie seine Handlung, Charaktere und Spezialeffekte."}
+{"id":69,"label":"writing","query":"Verfassen Sie das Skript für einen Podcast, der die Auswirkungen von Streaming-Plattformen auf die Musikindustrie diskutiert."}
+{"id":70,"label":"writing","query":"Verfassen Sie eine Konzertkritik für ein Symphonie-Konzert und diskutieren Sie die Leistung des Orchesters und das Gesamterlebnis für das Publikum."}
+{"id":71,"label":"coding","query":"Schreiben Sie ein C++-Programm, das eine Textdatei Zeile für Zeile liest und die Anzahl des Auftretens bestimmter Wörter in der Datei berechnet."}
+{"id":72,"label":"coding","query":"Verwenden Sie dynamische Programmierung, um eine Python-Funktion zu implementieren, die die längste gemeinsame Teilfolge von zwei Eingabestrings findet."}
+{"id":73,"label":"coding","query":"Erstellen Sie einen Python-Regular-Ausdruck, um eine E-Mail-Adresse zu validieren."}
+{"id":74,"label":"coding","query":"Schreiben Sie ein Programm, das mithilfe von dynamischer Programmierung die n-te Fibonacci-Zahl findet."}
+{"id":75,"label":"coding","query":"Implementierung eines Binärsuchalgorithmus zum Auffinden eines bestimmten Elements in einem sortierten Array."}
+{"id":76,"label":"coding","query":"Verwenden Sie in Python zwei Stacks, um eine Warteschlangendatenstruktur zu implementieren."}
+{"id":77,"label":"coding","query":"Implementieren Sie ein Programm, das gemeinsame Elemente in zwei Arrays ohne Verwendung zusätzlicher Datenstrukturen findet."}
+{"id":78,"label":"math","query":"Gegeben ist f(x) = 5x^3 - 2x + 3. Berechne den Wert von f(2)."}
+{"id":79,"label":"math","query":"Löse die Gleichung 3x + 10 = 5(x - 2) nach x auf."}
+{"id":80,"label":"math","query":"Wenn die Endpunkte des Abschnitts (2, -2) und (10, 4) sind, wie lang ist der Abschnitt?"}
+{"id":81,"label":"grammarly","query":"Gestern bin ich zum Supermarkt gegangen und habe einige Lebensmittel gekauft."}
+{"id":82,"label":"grammarly","query":"Obwohl es kalt ist, mag ich Outdoor-Aktivitäten. Mit Freunden gehe ich oft morgens joggen und wir geben auch bei schlechtem Wetter nicht auf."}
+{"id":83,"label":"grammarly","query":"Bitte nur den folgenden Text übersetzen, ohne weitere Informationen zu geben:\nObwohl er sehr müde war, hat er die Aufgabe dennoch erfüllt.\nDie Aufgabe hat er trotz Müdigkeit erledigt."}
+{"id":84,"label":"grammarly","query":"Gemäß den folgenden Anforderungen müssen Sie den folgenden Satz bearbeiten: Er mag Äpfel essen. Die Anforderung besteht darin, \"Äpfel\" durch \"Bananen\" zu ersetzen."}
+{"id":85,"label":"grammarly","query":"Bitte übersetzen Sie den folgenden Text ins Deutsche:\nBitte schreiben Sie den folgenden Satz in passive Form um. Sie bauen eine neue Brücke.\nBitte geben Sie nur die Übersetzung des vorherigen Texts an und geben Sie keine anderen Informationen an."}
+{"id":86,"label":"grammarly","query":"Er sagte, dass er heute sehr beschäftigt sei."}
+{"id":87,"label":"grammarly","query":"Mag er Schokolade nicht?"}
+{"id":88,"label":"grammarly","query":"Gestern habe ich ein neues Buch gekauft. Es ist sehr schön anzusehen."}
+{"id":89,"label":"grammarly","query":"Ihre Berufsbezeichnung ist Ärztin. (Her job title is doctor.) \n\nIhre Berufsbezeichnung ist Ärztin, oder?  (Her job title is doctor, isn't it?)"}
+{"id":90,"label":"grammarly","query":"Dieses Zimmer ist sehr geräumig. (Bitte beachten Sie, dass die folgende Umformung nur unter Verwendung der ursprünglichen Information erfolgen kann): Dieses Zimmer ist geräumiger als ein anderes Zimmer."}
+{"id":91,"label":"reasoning","query":"Auf dem Tisch liegen 4 Äpfel. Xiao Hong hat einen gegessen und Xiao Gang hat zwei genommen. Wie viele Äpfel sind noch übrig?"}
+{"id":92,"label":"reasoning","query":"Mit Blick nach Norden, welche Richtung ist es, wenn man um 90 Grad nach links dreht?"}
+{"id":93,"label":"reasoning","query":"Es gibt drei Dinge zu erledigen: 1) Das Wasser in der Küche zum Kochen bringen; 2) Kleidung bei Regen einsammeln; 3) Einen Freund anrufen. In welcher Reihenfolge sollten sie erledigt werden?"}
+{"id":94,"label":"reasoning","query":"Ist diese Logikrichtig: Da der Mörder kein Rucksackreisender ist und du kein Rucksackreisender bist, bist du der Mörder?"}
+{"id":95,"label":"reasoning","query":"Die nächste Zahl in der Sequenz 1, 4, 9, 16 ist welche?"}
+{"id":96,"label":"reasoning","query":"Drei Menschen leben zusammen: ein Arzt, ein Koch und ein Lehrer. Eines Tages bekommt der Lehrer eine Erkältung. Wer von diesen drei Menschen ist am wahrscheinlichsten in der Lage, dem Lehrer zu helfen?"}
+{"id":97,"label":"reasoning","query":"Die Polizei fand am Tatort eine Leiche mit einer Armbanduhr, die 17 Uhr anzeigte. Welche Schlussfolgerungen könnten die Polizei daraus ziehen?"}
+{"id":98,"label":"reasoning","query":"Ein Kilogramm Baumwolle und ein Kilogramm Eisen, welches ist schwerer?"}
+{"id":99,"label":"reasoning","query":"Schneiden Sie eine Ecke rechts oben vom Quadrat ab. Wie viele Seiten hat es jetzt noch?"}
+{"id":100,"label":"reasoning","query":"Es gibt zwei Räume, ein Raum hat einen Fön und der andere Raum hat eine Klimaanlage. Welcher Raum ist am besten für den Sommer geeignet?"}
