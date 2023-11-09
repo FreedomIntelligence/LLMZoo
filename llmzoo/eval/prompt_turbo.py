@@ -3,6 +3,7 @@ import json
 
 import backoff
 import openai
+import litellm
 import ray
 import shortuuid
 
@@ -12,7 +13,7 @@ MODEL_ID = 'gpt-3.5-turbo'
 @ray.remote(num_cpus=4)
 @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
 def completions_with_backoff(**kwargs):
-    return openai.ChatCompletion.create(**kwargs)
+    return litellm.completion(**kwargs)
 
 
 if __name__ == '__main__':
