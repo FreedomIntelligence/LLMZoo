@@ -6,13 +6,14 @@ import re
 import backoff
 import numpy as np
 import openai
+import litellm
 import ray
 
 
 @ray.remote(num_cpus=4)
 @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
 def get_eval(content: str, max_tokens: int):
-    response = openai.ChatCompletion.create(
+    response = litellm.completion(
         model='gpt-3.5-turbo',
         messages=[{
             'role': 'system',
