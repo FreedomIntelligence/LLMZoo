@@ -1,4 +1,4 @@
-# LLM Zoo: democratizing ChatGPT-learning 
+# LLM Zoo: democratizing ChatGPT-learning chat gpt sourav
 
 <div align=center>
 <img src="assets/zoo.png" width = "640" alt="zoo" align=center />
